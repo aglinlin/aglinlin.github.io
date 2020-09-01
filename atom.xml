@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://fuci.now.sh</id>
     <title>浮辞的宇宙</title>
-    <updated>2020-09-01T06:56:20.758Z</updated>
+    <updated>2020-09-01T06:59:18.035Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://fuci.now.sh"/>
     <link rel="self" href="https://fuci.now.sh/atom.xml"/>
-    <subtitle>Hello</subtitle>
+    <subtitle>写不出有魅力的文字</subtitle>
     <logo>https://fuci.now.sh/images/avatar.png</logo>
     <icon>https://fuci.now.sh/favicon.ico</icon>
     <rights>All rights reserved 2020, 浮辞的宇宙</rights>
