@@ -4,7 +4,7 @@
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>破车 | 浮辞的宇宙</title>
+<title>搭建博客 | 浮辞的宇宙</title>
 
 <link rel="shortcut icon" href="https://fuci.now.sh/favicon.ico?v=1599138432033">
 
@@ -89,46 +89,54 @@
         <div class="post-detail gt-bg-theme-color-second">
             <article class="gt-post-content">
                 <h2 class="post-title">
-                    破车
+                    搭建博客
                 </h2>
                 <div class="post-info">
                     <time class="post-time gt-c-content-color-first">
-                        · 2019-03-04 ·
+                        · 2020-09-03 ·
                     </time>
                     
-                        <a href="https://fuci.now.sh/tag/ku1wqoYwf/" class="post-tags">
-                            # 坑待填
-                        </a>
-                    
-                        <a href="https://fuci.now.sh/tag/rphI2TmYf/" class="post-tags">
-                            # R18
-                        </a>
-                    
-                        <a href="https://fuci.now.sh/tag/nOPYsMcxO/" class="post-tags">
-                            # 纱黑
+                        <a href="https://fuci.now.sh/tag/sh1KV8Fv3/" class="post-tags">
+                            # 搬运学习存档
                         </a>
                     
                 </div>
                 <div class="post-content">
-                    <p>“律师，有电话。”管家恭敬地托着电话在房门口说到。<br>
-门缝里伸出一只白皙的手，摸索了一下，管家把电话递到了那手。<br>
-“喂？谁啊？”略微有点起床气的女声。<br>
-“啧，就你这样还想赢我？”电话里传来甜腻的女声，带了浓浓的挑衅意味。“我一会儿过来跟你谈条</p>
-<p>件。”<br>
-“滚！老子才不会输给你！”愤怒地摁掉了电话，打开房门，扔给了门外的管家。<br>
-管家眯着眼睛悠悠地说：“卓律师还是一如既往地强势呢。这次的案子律师有把握赢她吗？”<br>
-张子墨披着件睡袍，懒懒地说：“呵！她这次一定会一败涂地的。对了，下次这个人的电话就不要拿给</p>
-<p>我了。”<br>
-“嗯。早餐已经准备好了，律师。”<br>
-“知道了，一会就下去。”</p>
-<p>分割线</p>
-<p>“叮咚——”<br>
-来者正是卓令，她穿着黑色的西装套裙，但裙子很短，不符合正常长度。她脚上穿着一双很正常的高跟</p>
-<p>鞋，带了一个很鲜艳的红色休闲包。<br>
-“午好呀！管家！”甜腻的女声让听到的人浑身起了鸡皮疙瘩。<br>
-“午好，卓律师，请进。”管家领着卓令来到客厅，“律师正在书房看案子，您在这儿坐一会，我去找</p>
-<p>她。”<br>
-“不用，我直接上去找她就好啦。你忙你的吧。”</p>
+                    <p>通过 GitHub+Gridea+Vercel 打造属于自己的免费博客。</p>
+<p>#前言<br>
+因为种种原因，许多写手太太纷纷前往 GitHub 上面放文。然而我看到一部分太太只是新建了一个仓库，然后把文字直接以 txt/md 的格式上传，或者在 Issues/Wiki 里面提交。这类方式虽然快捷简单，但对读者的阅读体验感并不算友好，而且并没有利用好 GitHub 这个平台。</p>
+<p>在这里分享一下利用 GitHub 搭建一个属于自己的博客的方法。很小白，只要会打字且有一台电脑就能操作！不骗人！</p>
+<p>#博客的好处<br>
+博客完全属于你自己！不会有屏蔽词来限制你的写作，支持评论，而且相比 Wordpress 无广告，阅读体验更佳！</p>
+<p>缺点嘛······就是没备案的博客可能会被墙，而且通常需要搭配另一个社交平台才能吸引到读者。</p>
+<p>#前期准备<br>
+准备一个供注册使用的邮箱📫<br>
+这里不推荐使用国内的邮箱。因为现在国内的邮箱基本都需要绑定手机号码，直接和个人信息挂钩，而且国内邮箱可能不支持部分外国网站的注册（如Wordpress）。<br>
+推荐大家使用无需手机验证注册的加密邮箱，如 ProtonMail 和 Tutanota。我个人使用的是前者，免费版已经足够用了。<br>
+使用上面的邮箱注册 GitHub 账号<br>
+这里同时建议大家下载 Chrome 浏览器。无广告而且自带翻译功能。如果看 GitHub 的英文有些头疼的话，可以通过 Chrome 将整个网站翻译成中文。<br>
+注意！你的博客原始域名会是 你的 GitHub 用户名.github.io，所以在输入用户名时最好谨慎一些！<br>
+前往 Vercel，利用 GitHub 账号关联注册<br>
+是的，这也是一个英文网站。<br>
+Vercel 能够帮助我们自动部署 GitHub 上的项目，加速博客，而且免费提供 .now.sh 的二级域名。<br>
+新建 GitHub 仓库<br>
+进入 GitHub，点击右上角的加号，选择第一行的 New repository。在 Repository name 中输入 你的 GitHub 用户名.github.io，然后直接点击下方绿色的 Create repository。</p>
+<p>#Gridea 搭建博客<br>
+我选择的博客搭建工具是 Gridea，对小白十分友好。我们接下来进入 官网 下载 Gridea。国内推荐使用码云（Gitee）下载，速度会快一些，但个人感觉没快多少。</p>
+<p>完成后打开 Gridea，前往 远程，然后根据官方文档 快速上手 的操作一步步走下去，就部署完成了👌</p>
+<p>#用 Vercel 加速博客<br>
+搭建完成后，前往 你的 GitHub 用户名.github.io 就可以看到自己的博客了。但最近 .github.io 的网站似乎都打不开，而且即使能打开速度也很慢🐌</p>
+<p>这时候我们可以利用 Vercel 来加速自己的博客🚀</p>
+<p>在 Vercel 上选择黑色实心按钮的 Import Project，然后选择 Import Git Repository，点击 Continue。</p>
+<p>接下来会蹦出一个输入框，将你的博客在 GitHub 上的仓库 URL 地址复制粘贴上去，点击 Continue。</p>
+<p>接下来继续直接点 Continue。之后你可以给自己的项目起名，比如xx的博客之类。起好名后点击 Deploy。</p>
+<p>Vercel 现在开始自动部署了。稍等片刻后会弹出一个 Congratulations!，这表示你的项目部署成功，点击 Visit 看看速度是不是快了些。</p>
+<p>#免费获得二级域名 .now.sh<br>
+进入你的博客在 Vercel 上面的项目，然后点击顶部的 Settings，点击右侧的 Domains。</p>
+<p>Vercel 默认分配给你的博客的域名是 你的 GitHub 用户名.vercel.app，这里我们可以在上方的输入框中，输入 你喜欢的域名.now.sh，点击 Add，如果未被使用的话可以直接添加上去。</p>
+<p>完成后可以点击 .vercel.app 里的 Edit，将它 Redirect to（重定向） 到你新添加的域名上，最后不要忘记 Save。</p>
+<p>然后返回Gridea 远程设置域名为  你喜欢的域名.now.sh 或你喜欢的域名 .vercel.app</p>
+<p>完成啦，撒花！目前来看 .now.sh 和 .vercel.app 在国内是能够正常访问的，速度也不错。</p>
 
                 </div>
             </article>
@@ -137,8 +145,8 @@
         
             <div class="next-post">
                 <div class="next gt-c-content-color-first">下一篇</div>
-                <a href="https://fuci.now.sh/post/sha-hei/" class="post-title gt-a-link">
-                    杀黑
+                <a href="https://fuci.now.sh/post/bu-yao-xiao-kan-rou-ruo-de-shu-sheng-a/" class="post-title gt-a-link">
+                    不要小看柔弱书生啊
                 </a>
             </div>
         
