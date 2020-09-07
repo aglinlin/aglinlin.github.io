@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://https://oni.now.sh/</id>
-    <title>Blue moon</title>
-    <updated>2020-09-07T09:22:20.297Z</updated>
+    <title>Head High</title>
+    <updated>2020-09-07T09:32:11.898Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://https://oni.now.sh/"/>
     <link rel="self" href="https://https://oni.now.sh/atom.xml"/>
     <subtitle>写不出有魅力的文字</subtitle>
     <logo>https://https://oni.now.sh/images/avatar.png</logo>
     <icon>https://https://oni.now.sh/favicon.ico</icon>
-    <rights>All rights reserved 2020, Blue moon</rights>
-    <entry>
-        <title type="html"><![CDATA[HXKASILE]]></title>
-        <id>https://https://oni.now.sh/post/hxkasile/</id>
-        <link href="https://https://oni.now.sh/post/hxkasile/">
-        </link>
-        <updated>2020-09-07T09:18:13.000Z</updated>
-    </entry>
+    <rights>All rights reserved 2020, Head High</rights>
     <entry>
         <title type="html"><![CDATA[编辑博客]]></title>
         <id>https://https://oni.now.sh/post/bo-ke-bian-ji/</id>
@@ -79,5 +72,12 @@
         <link href="https://https://oni.now.sh/post/nu-peng-you-ai-sheng-tan-qi-de-hua-nan-peng-you-hui-zen-me-zuo/">
         </link>
         <updated>2020-03-28T10:15:30.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[失算]]></title>
+        <id>https://https://oni.now.sh/post/shi-suan/</id>
+        <link href="https://https://oni.now.sh/post/shi-suan/">
+        </link>
+        <updated>2020-01-07T10:14:34.000Z</updated>
     </entry>
 </feed>
