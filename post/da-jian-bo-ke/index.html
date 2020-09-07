@@ -6,7 +6,7 @@
 
 <title>搭建博客 | Head High</title>
 
-<link rel="shortcut icon" href="https://oni.now.sh/favicon.ico?v=1599475017589">
+<link rel="shortcut icon" href="https://oni.now.sh/favicon.ico?v=1599475977205">
 
 <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="https://oni.now.sh/styles/main.css">
@@ -77,7 +77,7 @@
             
         </div>
         <div style="text-align: center">
-            <form id="gridea-search-form" style="position: relative" data-update="1599475017589" action="/search/index.html">
+            <form id="gridea-search-form" style="position: relative" data-update="1599475977205" action="/search/index.html">
                 <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
                 <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
             </form>
@@ -106,11 +106,11 @@
 <p>#前言<br>
 因为种种原因，许多写手太太纷纷前往 GitHub 上面放文。然而我看到一部分太太只是新建了一个仓库，然后把文字直接以 txt/md 的格式上传，或者在 Issues/Wiki 里面提交。这类方式虽然快捷简单，但对读者的阅读体验感并不算友好，而且并没有利用好 GitHub 这个平台。</p>
 <p>在这里分享一下利用 GitHub 搭建一个属于自己的博客的方法。很小白，只要会打字且有一台电脑就能操作！不骗人！</p>
-<p>#博客的好处<br>
-博客完全属于你自己！不会有屏蔽词来限制你的写作，支持评论，而且相比 Wordpress 无广告，阅读体验更佳！</p>
+<h1 id="博客的好处">博客的好处</h1>
+<p>博客完全属于你自己！不会有屏蔽词来限制你的写作，支持评论，而且相比 Wordpress 无广告，阅读体验更佳！</p>
 <p>缺点嘛······就是没备案的博客可能会被墙，而且通常需要搭配另一个社交平台才能吸引到读者。</p>
-<p>#前期准备<br>
-准备一个供注册使用的<strong>邮箱📫</strong><br>
+<h1 id="前期准备">前期准备</h1>
+<p>准备一个供注册使用的<strong>邮箱📫</strong><br>
 这里不推荐使用国内的邮箱。因为现在国内的邮箱基本都需要绑定手机号码，直接和个人信息挂钩，而且国内邮箱可能不支持部分外国网站的注册（如Wordpress）。<br>
 推荐大家使用无需手机验证注册的加密邮箱，如  <a href="https://protonmail.com/zh-Hans/">ProtonMail</a>和 <a href="https://tutanota.com/zh/">Tutanota</a>。我个人使用的是前者，免费版已经足够用了。<br>
 使用上面的邮箱注册 <a href="https://github.com/">GitHub </a>账号<br>
@@ -121,22 +121,22 @@
 Vercel 能够帮助我们自动部署 GitHub 上的项目，加速博客，而且免费提供 .now.sh 的二级域名。<br>
 新建 GitHub 仓库<br>
 进入 GitHub，点击右上角的加号，选择第一行的 New repository。在 Repository name 中输入 你的 GitHub 用户名.github.io，然后直接点击下方绿色的 Create repository。</p>
-<p>#Gridea 搭建博客<br>
-我选择的博客搭建工具是 <strong>Gridea</strong>，对小白十分友好。我们接下来进入 官网 下载 <a href="https://gridea.dev/">Gridea</a>。国内推荐使用码云（Gitee）下载，速度会快一些，但个人感觉没快多少。</p>
-<p>完成后打开 Gridea，前往 远程，然后根据官方文档 [快速上手] (https://gridea.dev/gridea-start/)的操作一步步走下去，就部署完成了👌</p>
-<p>#用 Vercel 加速博客<br>
-搭建完成后，前往 你的 GitHub 用户名.github.io 就可以看到自己的博客了。但最近 .github.io 的网站似乎都打不开，而且即使能打开速度也很慢🐌</p>
+<h1 id="gridea-搭建博客">Gridea 搭建博客</h1>
+<p>我选择的博客搭建工具是 <strong>Gridea</strong>，对小白十分友好。我们接下来进入 官网 下载 <a href="https://gridea.dev/">Gridea</a>。国内推荐使用码云（Gitee）下载，速度会快一些，但个人感觉没快多少。</p>
+<p>完成后打开 Gridea，前往 远程，然后根据官方文档 <a href="https://gridea.dev/gridea-start/">快速上手</a>的操作一步步走下去，就部署完成了👌</p>
+<h1 id="用-vercel-加速博客">用 Vercel 加速博客</h1>
+<p>搭建完成后，前往 你的 GitHub 用户名.github.io 就可以看到自己的博客了。但最近 .github.io 的网站似乎都打不开，而且即使能打开速度也很慢🐌</p>
 <p>这时候我们可以利用 <a href="https://vercel.com/">Vercel</a>来加速自己的博客🚀</p>
 <p>在 Vercel 上选择黑色实心按钮的 <font color=#000000>Import Project</font>，然后选择 <font color=#000000>Import Git Repository</font>，点击 <font color=#000000>Continue</font>。</p>
-<p>接下来会蹦出一个输入框，将你的博客在 GitHub 上的仓库 URL 地址复制粘贴上去，点击 Continue。</p>
-<p>接下来继续直接点 Continue。之后你可以给自己的项目起名，比如xx的博客之类。起好名后点击 Deploy。</p>
-<p>Vercel 现在开始自动部署了。稍等片刻后会弹出一个 Congratulations!，这表示你的项目部署成功，点击 Visit 看看速度是不是快了些。</p>
-<p>#免费获得二级域名 .now.sh<br>
-进入你的博客在 Vercel 上面的项目，然后点击顶部的 Settings，点击右侧的 Domains。</p>
+<p>接下来会蹦出一个输入框，将你的博客在 GitHub 上的仓库 URL 地址复制粘贴上去，点击 <font color=#000000>Continue</font>。</p>
+<p>接下来继续直接点 <font color=#000000>Continue</font>。之后你可以给自己的项目起名，比如xx的博客之类。起好名后点击 <font color=#000000>Deploy</font>。</p>
+<p>Vercel 现在开始自动部署了。稍等片刻后会弹出一个 <strong>Congratulations!</strong>，这表示你的项目部署成功，点击 Visit 看看速度是不是快了些。</p>
+<h1 id="免费获得二级域名-nowsh">免费获得二级域名 .now.sh</h1>
+<p>进入你的博客在 Vercel 上面的项目，然后点击顶部的 Settings，点击右侧的 Domains。</p>
 <p>Vercel 默认分配给你的博客的域名是 你的 GitHub 用户名.vercel.app，这里我们可以在上方的输入框中，输入 你喜欢的域名.now.sh，点击 Add，如果未被使用的话可以直接添加上去。</p>
 <p>完成后可以点击 .vercel.app 里的 Edit，将它 Redirect to（重定向） 到你新添加的域名上，最后不要忘记 Save。</p>
-<p>然后返回Gridea 远程设置域名为  你喜欢的域名.now.sh 或你喜欢的域名 .vercel.app</p>
-<p>完成啦，撒花！目前来看 .now.sh 和 .vercel.app 在国内是能够正常访问的，速度也不错。</p>
+<p>然后返回Gridea 远程设置域名为  <strong>你喜欢的域名.now.sh <strong>或</strong>你喜欢的域名.vercel.app</strong></p>
+<p>完成啦，撒花！目前来看 **.now.sh **和 **.vercel.app **在国内是能够正常访问的，速度也不错。</p>
 
                 </div>
             </article>
