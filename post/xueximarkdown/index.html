@@ -1,0 +1,359 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+<meta name="description" content=""/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+<title>学习Markdown | Mr.Ghost</title>
+
+<link rel="shortcut icon" href="https://oni.now.sh/favicon.ico?v=1608038590317">
+
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://oni.now.sh/styles/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/css/bootstrap.min.css">
+
+<script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets/highlight.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dockerfile.min.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/languages/dart.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.0/dist/js/bootstrap.min.js"></script>
+<!-- DEMO JS -->
+<!--<script src="media/scripts/index.js"></script>-->
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
+</head>
+<body>
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
+    <div class="navbar-brand">
+        <img class="user-avatar" src="/images/avatar.png" alt="头像">
+        <div class="site-name gt-c-content-color-first">
+            Mr.Ghost
+        </div>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars gt-c-content-color-first" style="font-size: 18px"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="navbar-nav mr-auto" style="text-align: center">
+            
+                <div class="nav-item">
+                    
+                        <a href="/" class="menu gt-a-link">
+                            首页
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://oni.now.sh/post/list1" class="menu gt-a-link">
+                            博客
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://oni.now.sh/post/list2" class="menu gt-a-link">
+                            原创
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="https://oni.now.sh/post/list3" class="menu gt-a-link">
+                            同人
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/tags" class="menu gt-a-link">
+                            标签
+                        </a>
+                    
+                </div>
+            
+                <div class="nav-item">
+                    
+                        <a href="/post/about" class="menu gt-a-link">
+                            关于
+                        </a>
+                    
+                </div>
+            
+        </div>
+        <div style="text-align: center">
+            <form id="gridea-search-form" style="position: relative" data-update="1608038590317" action="/search/index.html">
+                <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
+                <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
+            </form>
+        </div>
+    </div>
+</nav>
+
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    学习Markdown
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-09-03 ·
+                    </time>
+                    
+                        <a href="https://oni.now.sh/tag/sh1KV8Fv3/" class="post-tags">
+                            # 搬运学习存档
+                        </a>
+                    
+                </div>
+                <div class="post-content">
+                    <p>搬运学习<br>
+<a href="https://chenmu.now.sh/post/xiao-bai-jian-zhan-vol1-bo-ke-pian-bian-ji">搬运自沉目的博客</a></p>
+<h2 id="1-一起来-markdown"><strong>1. 一起来 Markdown</strong></h2>
+<p>Markdown 语言在 2004 由<ruby>约翰·格鲁伯<rt>John Gruber</rt><ruby>创建，是一种轻量级标记语言，文档后缀为 .md。</p>
+<p><strong>1-1 基础元素</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">效果</th>
+<th style="text-align:center">Markdown</th>
+<th style="text-align:center">HTML</th>
+<th style="text-align:right">快捷键</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>加租</strong></td>
+<td style="text-align:center"><code>**加粗**</code></td>
+<td style="text-align:center"><code>&lt;b&gt;加粗&lt;/b&gt;</code></td>
+<td style="text-align:right">Ctrl+B</td>
+</tr>
+<tr>
+<td style="text-align:left"><em>斜体</em></td>
+<td style="text-align:center"><code>*斜体*</code></td>
+<td style="text-align:center"><code>&lt;i&gt;斜体&lt;/i&gt;</code></td>
+<td style="text-align:right">Ctrl+I</td>
+</tr>
+<tr>
+<td style="text-align:left"><em><strong>加租斜体</strong></em></td>
+<td style="text-align:center"><code>***加粗斜体***</code></td>
+<td style="text-align:center"><code>&lt;b&gt;&lt;i&gt;加粗斜体&lt;/i&gt;&lt;/b&gt;</code></td>
+<td style="text-align:right">Ctrl+B+I</td>
+</tr>
+<tr>
+<td style="text-align:left"><s>删除线</s></td>
+<td style="text-align:center"><code>~~删除线~~</code></td>
+<td style="text-align:center"><code>&lt;s&gt;删除线&lt;/s&gt;</code></td>
+<td style="text-align:right">Alt+S</td>
+</tr>
+<tr>
+<td style="text-align:left"><u>下划线</u></td>
+<td style="text-align:center">\</td>
+<td style="text-align:center"><code>&lt;u&gt;下划线&lt;/u&gt;</code></td>
+<td style="text-align:right">\</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1-2 标题</strong></p>
+<!-- 注意#后要空格 -->
+<p><code># 一级标题</code><br>
+<code>## 二级标题</code><br>
+<code>### 三级标题</code><br>
+<code>#### 四级标题</code><br>
+<code>##### 五级标题</code><br>
+<code>###### 六级标题</code></p>
+<h1 id="一级标题">一级标题</h1>
+<h2 id="二级标题">二级标题</h2>
+<h3 id="三级标题">三级标题</h3>
+<h4 id="四级标题">四级标题</h4>
+<h5 id="五级标题">五级标题</h5>
+<h6 id="六级标题">六级标题</h6>
+<p><strong>1-3 分割线</strong><br>
+三个或三个以上的 <code>***或 --- 或 ___</code></p>
+<p><strong>1-4 脚注</strong><br>
+<code>欢迎 [^1]。</code><br>
+<code>[^1]: 点击箭头可返回（这一句要放置在文末）</code></p>
+<p>欢迎 <sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<p><strong>1-5 列表</strong><br>
+<code>&lt;!-- 有序列表 --&gt;</code><br>
+<code>1. 需要空格</code><br>
+<code>2. 第二个</code></p>
+<!-- 有序列表 -->
+<ol>
+<li>需要空格</li>
+<li>第二个</li>
+</ol>
+<p><code>&lt;!-- 无序列表 --&gt;</code><br>
+<code>- 也要空格</code><br>
+<code>- 你好！</code></p>
+<!-- 无序列表 -->
+<ul>
+<li>也要空格</li>
+<li>你好！</li>
+</ul>
+<p><code>&lt;!-- 任务列表 --&gt;</code><br>
+<code>- [ ] 还没完成（中间有空格）</code><br>
+<code>- [x] 完成了</code></p>
+<!-- 任务列表 -->
+<ul class="contains-task-list">
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-9916989"><label class="task-list-item-label" for="task-item-9916989"> 还没完成（中间有空格）</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-8302239"><label class="task-list-item-label" for="task-item-8302239"> 完成了</label></li>
+</ul>
+<p><strong>1-6 引用</strong><br>
+<code>&gt; 需要空格</code><br>
+<code>&gt; &gt;继续引用</code></p>
+<blockquote>
+<p>需要空格</p>
+<blockquote>
+<p>继续引用</p>
+</blockquote>
+</blockquote>
+<p><strong>1-7 表格</strong><br>
+<code>| 左对齐 | 居中 | 右对齐 |</code><br>
+<code>| :---- | :----: | ----: |</code><br>
+<code>| Hello | World | 你好 |</code></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">左对齐</th>
+<th style="text-align:center">居中</th>
+<th style="text-align:right">右对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Hello</td>
+<td style="text-align:center">World</td>
+<td style="text-align:right">你好</td>
+</tr>
+</tbody>
+</table>
+<p><strong>1-8 链接</strong><br>
+<code>[这是这篇博文的原链接](https://chenmu.now.sh/post/xiao-bai-jian-zhan-vol1-bo-ke-pian-bian-ji)</code></p>
+<p><a href="https://chenmu.now.sh/post/xiao-bai-jian-zhan-vol1-bo-ke-pian-bian-ji">这是这篇博文的原链接</a></p>
+<p><strong>1-9 图片</strong><br>
+<code>![](图片地址)</code></p>
+<p><strong>1-10 代码</strong><br>
+<code></code>代码内容<code></code><br>
+<code>&lt;!-- 代码块是用```包住代码 --&gt;</code></p>
+<h2 id="2-借助html"><strong>2. 借助HTML</strong></h2>
+<p>我们可以借助 HTML 来丰富编辑格式。</p>
+<p><strong>2-1 文字颜色&amp;大小</strong><br>
+<code>&lt;font size=5px&gt;这是5px的字号&lt;/font&gt;</code><br>
+<code>&lt;font color=#33FFFF&gt;这是蓝色的字&lt;/font&gt;</code><br>
+<code>&lt;font size=5px color=#33FFFF&gt;这是蓝色的字&lt;/font&gt;</code></p>
+<p><font size=5px>这是5px的字号</font><br>
+<font color=#33FFFF>这是蓝色的字</font><br>
+<font size=5px color=#33FFFF>这是蓝色的字</font></p>
+<p><strong>2-2 文字上标&amp;下标</strong><br>
+<code>这是上标&lt;sup&gt;2&lt;/sup&gt;</code><br>
+<code>这是下标&lt;sub&gt;1&lt;/sub&gt;</code></p>
+<p>这是上标<sup>2</sup><br>
+这是下标<sub>1</sub></p>
+<p><strong>2-3 换行&amp;空格</strong><br>
+<code>&lt;br&gt;&lt;!-- 换行 --&gt;</code><br>
+<code>&amp;nbsp; &lt;!-- 一个字符的半角的空格 --&gt;</code><br>
+<code>&amp;ensp; &lt;!-- 一个字符的半角的空格（1/2个中文宽度） --&gt;</code><br>
+<code>&amp;emsp; &lt;!-- 两个字符的全角的空格（1个中文宽度） --&gt;</code><br>
+<code>&amp;thinsp; &lt;!-- 小于一个字符的空格 --&gt;</code></p>
+<p><strong>2-4 新标签页打开</strong><br>
+<code>&lt;a href=&quot;https://chenmu.now.sh&quot; target=&quot;_blank&quot;&gt;沉目的小窝&lt;/a&gt;</code></p>
+<p><a href="https://chenmu.now.sh" target="_blank">沉目的小窝</a></p>
+<p><strong>2-5 高亮文本</strong><br>
+<code>&lt;mark&gt;高亮文本&lt;/mark&gt;</code></p>
+<p><mark>高亮文本</mark></p>
+<p><strong>2-6 位置</strong><br>
+<code>&lt;center&gt;居中&lt;/center&gt;</code><br>
+<code>&lt;p style=&quot;text-align:left&quot;&gt;居左&lt;/p&gt;</code><br>
+<code>&lt;p style=&quot;text-align:right&quot;&gt;居右&lt;/p&gt;</code></p>
+<center>居中</center>
+<p style="text-align:left">居左</p>
+<p style="text-align:right">居右</p>
+<p><strong>2-7 图片设置高宽</strong><br>
+<code>&lt;img src=&quot;图片地址&quot; width=&quot;300&quot; height=&quot;300&quot;&gt;</code></p>
+<p><strong>2-8 文本提示</strong><br>
+<code>&lt;abbr title=&quot;显示内容&quot;&gt;将鼠标移上来看看&lt;/abbr&gt;</code></p>
+<p><abbr title="显示内容">将鼠标移上来看看</abbr></p>
+<p><strong>2-9 注音</strong><br>
+<code>&lt;ruby&gt;你好&lt;rt&gt;Ni Hao&lt;/rt&gt;！&lt;ruby&gt;</code></p>
+<p><ruby>你好<rt>Ni Hao</rt>！<ruby></p>
+<p><strong>2-10 折叠</strong><br>
+<code>&lt;details&gt;</code><br>
+<code>&lt;summary&gt;点击展开文本（仅 Chrome 和 Safari 6 支持）&lt;/summary&gt;</code><br>
+<code>&lt;p&gt;Hello World!&lt;/p&gt;</code><br>
+<code>&lt;/details&gt;</code></p>
+<details>
+<summary>点击展开文本（仅 Chrome 和 Safari 6 支持）</summary>
+<p>Hello World!</p>
+</details>
+<p><strong>2-11 禁止文字复制和选中</strong></p>
+<p><code>&lt;!-- 在文章中加入以下这段代码 --&gt;</code><br>
+<code>&lt;body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'&gt;</code></p>
+<p>呼~差不多就这些了，都是比较常用的标签。第一次使用会有些不习惯，但写多了文章就会慢慢熟练啦！</p>
+<p>最后再推荐一款支持实时预览的 <strong>Markdown 文本编辑器</strong> <a href="https://www.typora.io/">Typora</a>，目前还是 Beta 版本，所以免费。</p>
+<p>想学习关于 Markdown 和 HTML 的更多标签，可以前往 <a href="https://www.runoob.com/">菜鸟教程</a>。</p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>点击箭头可返回（这一句要放置在文末） ↩︎ <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+
+                </div>
+            </article>
+        </div>
+
+        
+
+        
+
+        
+
+        
+
+        <div class="site-footer gt-c-content-color-first">
+    <div class="slogan gt-c-content-color-first">写不出有魅力的文字</div>
+    <div class="social-container">
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+    </div>
+    <div class="footer-info">
+        ©2020 阿鬼鬼
+    </div>
+    <div>
+        Theme by <a href="https://imhanjie.com/" target="_blank">imhanjie</a>, Powered by <a
+                href="https://github.com/getgridea/gridea" target="_blank">Gridea | <a href="https://oni.now.sh/atom.xml" target="_blank">RSS</a></a>
+    </div>
+</div>
+
+<script>
+  hljs.initHighlightingOnLoad()
+</script>
+
+    </div>
+</div>
+</body>
+</html>

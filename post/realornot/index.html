@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <meta charset="utf-8"/>
 <meta name="description" content=""/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-<title>搜索 - Mr.Ghost</title>
+<title>真假 | Mr.Ghost</title>
 
 <link rel="shortcut icon" href="https://oni.now.sh/favicon.ico?v=1608038590317">
 
@@ -27,21 +25,11 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.0/dist/fuse.basic.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/ejs@3.1.3/ejs.min.js"></script>
-    <script src="https://oni.now.sh/media/gridea-search/gridea-search.js"></script>
-    <script src="https://oni.now.sh/media/gridea-search/result-template.ejs" type="text/ejs"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css">
 </head>
-
 <body>
-    <style>
-        .searched-keyword {
-            background-color: yellow;
-            color: red;
-        }
-    </style>
-    <div class="main gt-bg-theme-color-first">
-        <nav class="navbar navbar-expand-lg">
+<div class="main gt-bg-theme-color-first">
+    <nav class="navbar navbar-expand-lg">
     <div class="navbar-brand">
         <img class="user-avatar" src="/images/avatar.png" alt="头像">
         <div class="site-name gt-c-content-color-first">
@@ -113,16 +101,42 @@
     </div>
 </nav>
 
-        <div id="gridea-search-result" data-update="1608038590317">
-            <div class="searching" style="font-size: 18px; margin-top: 50px;">
-                <i class="fa fa-sync-alt fa-spin"></i>&nbsp;&nbsp;搜索中......
-                <br><br>
-                <span style="font-size: 65%; color: #aaa">第一次搜索可能需要耗费较长时间构建索引，请耐心等待...</span>
-            </div>
-            <div class="no-result" style="display:none; font-size: 20px; margin-top: 50px;">
-                <i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;未搜索到相关文章，请更换关键词
-            </div>
+    <div class="post-container">
+        <div class="post-detail gt-bg-theme-color-second">
+            <article class="gt-post-content">
+                <h2 class="post-title">
+                    真假
+                </h2>
+                <div class="post-info">
+                    <time class="post-time gt-c-content-color-first">
+                        · 2020-08-28 ·
+                    </time>
+                    
+                </div>
+                <div class="post-content">
+                    <p><strong>「本当の君前に現れた、」</strong></p>
+<p><strong>「嘘の君。」</strong></p>
+<p><strong>「僕の愛はどっちなの？」</strong></p>
+<p><strong>「だけど、もう僕の心は決まってる。」</strong></p>
+<p><strong>「ああ！どっちも大好き。両方ラブラブなのさ～」</strong></p>
+<p>“在真正的你面前出现的，”</p>
+<p>“假的你。”</p>
+<p>“我的爱是哪一个？”</p>
+<p>“可是，我的心已决定了。”</p>
+<p>“啊啊！哪个都最喜欢了。两人爱意满满的啊~”</p>
+
+                </div>
+            </article>
         </div>
+
+        
+
+        
+
+        
+
+        
+
         <div class="site-footer gt-c-content-color-first">
     <div class="slogan gt-c-content-color-first">写不出有魅力的文字</div>
     <div class="social-container">
@@ -154,6 +168,6 @@
 </script>
 
     </div>
+</div>
 </body>
-
 </html>
