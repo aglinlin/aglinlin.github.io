@@ -2458,6 +2458,10 @@ ul.links li:hover .bg {
   }
 }
 
-    header {background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://www.z4a.net/image/g6tFKh);}
+    header {background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(https://www.z4a.net/images/2020/12/21/cool-background-1.png);}
     
+    
+    .valine {
+        display: none;
+      }
     
