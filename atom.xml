@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oni.now.sh</id>
     <title>Mr.Ghost</title>
-    <updated>2020-12-15T13:23:59.999Z</updated>
+    <updated>2020-12-21T14:18:51.606Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oni.now.sh"/>
     <link rel="self" href="https://oni.now.sh/atom.xml"/>
@@ -11,10 +11,45 @@
     <icon>https://oni.now.sh/favicon.ico</icon>
     <rights>All rights reserved 2020, Mr.Ghost</rights>
     <entry>
+        <title type="html"><![CDATA[学习Markdown]]></title>
+        <id>https://oni.now.sh/post/xueximarkdown/</id>
+        <link href="https://oni.now.sh/post/xueximarkdown/">
+        </link>
+        <updated>2020-09-03T12:00:48.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[学习搭建博客]]></title>
+        <id>https://oni.now.sh/post/da-jian-bo-ke/</id>
+        <link href="https://oni.now.sh/post/da-jian-bo-ke/">
+        </link>
+        <updated>2020-09-03T11:51:13.000Z</updated>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[真假]]></title>
         <id>https://oni.now.sh/post/realornot/</id>
         <link href="https://oni.now.sh/post/realornot/">
         </link>
         <updated>2020-08-28T11:20:35.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[破坏]]></title>
+        <id>https://oni.now.sh/post/po-huai/</id>
+        <link href="https://oni.now.sh/post/po-huai/">
+        </link>
+        <updated>2017-10-22T10:18:31.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Checkmate]]></title>
+        <id>https://oni.now.sh/post/checkmate/</id>
+        <link href="https://oni.now.sh/post/checkmate/">
+        </link>
+        <updated>2017-02-27T10:22:30.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[【叶橙】顺水推舟]]></title>
+        <id>https://oni.now.sh/post/shun-shui-tui-zhou/</id>
+        <link href="https://oni.now.sh/post/shun-shui-tui-zhou/">
+        </link>
+        <updated>2016-12-06T10:25:42.000Z</updated>
     </entry>
 </feed>
