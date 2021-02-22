@@ -84,7 +84,7 @@
         
         <li class="nav-item">
           <div class="gridea-search-container">
-            <form id="gridea-search-form" style="position: relative" data-update="1614001273537"
+            <form id="gridea-search-form" style="position: relative" data-update="1614015697825"
               action="/search/index.html">
               <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
               <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
@@ -140,7 +140,7 @@
         
         <li class="nav-item">
           <div class="gridea-search-container">
-            <form id="gridea-search-form" style="position: relative" data-update="1614001273537"
+            <form id="gridea-search-form" style="position: relative" data-update="1614015697825"
               action="/search/index.html">
               <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
               <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
@@ -271,8 +271,8 @@
 <code>- [x] 完成了</code></p>
 <!-- 任务列表 -->
 <ul class="contains-task-list">
-<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-2257998"><label class="task-list-item-label" for="task-item-2257998"> 还没完成（中间有空格）</label></li>
-<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-1888703"><label class="task-list-item-label" for="task-item-1888703"> 完成了</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" disabled="" type="checkbox" id="task-item-6624281"><label class="task-list-item-label" for="task-item-6624281"> 还没完成（中间有空格）</label></li>
+<li class="task-list-item"><input class="task-list-item-checkbox" checked="" disabled="" type="checkbox" id="task-item-4052437"><label class="task-list-item-label" for="task-item-4052437"> 完成了</label></li>
 </ul>
 <p><strong>1-6 引用</strong><br>
 <code>&gt; 需要空格</code><br>
@@ -364,6 +364,15 @@
 <p><strong>2-11 禁止文字复制和选中</strong></p>
 <p><code>&lt;!-- 在文章中加入以下这段代码 --&gt;</code><br>
 <code>&lt;body oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'&gt;</code></p>
+<p><strong>2-12 嵌入音视频</strong><br>
+<video id="video" controls="" preload="none" poster="https://i.loli.net/2020/01/09/n9bcw14OXN82lMD.png"></p>
+  <source id="mp4" src="https://video.pearvideo.com/mp4/third/20200109/cont-1640431-10042874-102056-hd.mp4" type="video/mp4">
+</video>
+<p><code>&lt;video id=&quot;video&quot; controls=&quot;&quot; preload=&quot;none&quot; poster=&quot;https://i.loli.net/2020/01/09/n9bcw14OXN82lMD.png&quot;&gt;&lt;source id=&quot;mp4&quot; src=&quot;https://video.pearvideo.com/mp4/third/20200109/cont-1640431-10042874-102056-hd.mp4&quot; type=&quot;video/mp4&quot;&gt;&lt;/video&gt;</code></p>
+<audio id="audio" controls="" preload="none">
+    <source id="mp3" src="http://qiniu.cloud.fandong.me/Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB%E6%AD%8C%20%28Live%29.mp3">
+</audio>
+<p><code>&lt;audio id=&quot;audio&quot; controls=&quot;&quot; preload=&quot;none&quot;&gt;&lt;source id=&quot;mp3&quot; src=&quot;http://qiniu.cloud.fandong.me/Music_iP%E8%B5%B5%E9%9C%B2%20-%20%E7%A6%BB%E6%AD%8C%20%28Live%29.mp3&quot;&gt;&lt;/audio&gt;</code></p>
 <hr class="footnotes-sep">
 <section class="footnotes">
 <ol class="footnotes-list">
@@ -426,10 +435,10 @@
 		el: '#vcomments',
 		appId: 'mn1hHSFCuQ948YsUVjuPkwj5-MdYXbMMI',
 		appKey: 'hpNglGmkNH90BRoLk2vtO525',
-		avatar: '',
+		avatar: 'mp',
 		pageSize: 5,
 		recordIp: false,
-		placeholder: '不要吝啬赞美~',
+		placeholder: '祝欢~',
 		visitor: false,
 	});
 </script>
