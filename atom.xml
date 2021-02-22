@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://oni.now.sh</id>
     <title>Shooting at the wind</title>
-    <updated>2021-02-22T05:35:11.964Z</updated>
+    <updated>2021-02-22T05:52:29.432Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://oni.now.sh"/>
     <link rel="self" href="https://oni.now.sh/atom.xml"/>
@@ -10,6 +10,21 @@
     <logo>https://oni.now.sh/images/avatar.png</logo>
     <icon>https://oni.now.sh/favicon.ico</icon>
     <rights>All rights reserved 2021, Shooting at the wind</rights>
+    <entry>
+        <title type="html"><![CDATA[AI与我写的一篇月莲文]]></title>
+        <id>https://oni.now.sh/post/ai-yu-wo-xie-de-yi-pian-yue-lian-wen/</id>
+        <link href="https://oni.now.sh/post/ai-yu-wo-xie-de-yi-pian-yue-lian-wen/">
+        </link>
+        <updated>2021-02-22T05:37:12.000Z</updated>
+        <summary type="html"><![CDATA[<p>   <!-- 两个字符的全角的空格（1个中文宽度） -->莲音在酒会上遇到了希尔度的父亲希尔德。<br>
+   <!-- 两个字符的全角的空格（1个中文宽度） -->在酒会之上，莲音与希尔德相谈甚欢，希尔德也非常赞赏这个年轻人的才华，还提出让莲音留在希尔德家族。<br>
+   <!-- 两个字符的全角的空格（1个中文宽度） -->但是莲音婉拒了希尔德的好意，他认为自己并不适合希尔德家族，更何况希尔德家族已经有了希尔度这个优秀的儿子。</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>   <!-- 两个字符的全角的空格（1个中文宽度） -->莲音在酒会上遇到了希尔度的父亲希尔德。<br>
+   <!-- 两个字符的全角的空格（1个中文宽度） -->在酒会之上，莲音与希尔德相谈甚欢，希尔德也非常赞赏这个年轻人的才华，还提出让莲音留在希尔德家族。<br>
+   <!-- 两个字符的全角的空格（1个中文宽度） -->但是莲音婉拒了希尔德的好意，他认为自己并不适合希尔德家族，更何况希尔德家族已经有了希尔度这个优秀的儿子。</p>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[真假]]></title>
         <id>https://oni.now.sh/post/realornot/</id>
