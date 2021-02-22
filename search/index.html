@@ -81,7 +81,7 @@
         
         <li class="nav-item">
           <div class="gridea-search-container">
-            <form id="gridea-search-form" style="position: relative" data-update="1613973794154"
+            <form id="gridea-search-form" style="position: relative" data-update="1613973847596"
               action="/search/index.html">
               <input class="search-input" autocomplete="off" spellcheck="false" name="q" placeholder="搜索文章" />
               <i class="fas fa-search gt-c-content-color-first" style="position: absolute; top: 9px; left: 10px;"></i>
@@ -111,7 +111,7 @@
   </div>
 </header>
     <div class="main gt-bg-theme-color-first">
-        <div id="gridea-search-result" data-update="1613973794154">
+        <div id="gridea-search-result" data-update="1613973847596">
             <div class="searching" style="font-size: 18px; margin-top: 50px;">
                 <i class="fa fa-sync-alt fa-spin"></i>&nbsp;&nbsp;搜索中......
                 <br><br>
@@ -191,6 +191,47 @@
     }
   })(this));</script>
     </div>
+    
+    <div id="landlord-parent">
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="240" height="250" class="live2d"></canvas>
+    </div>
+</div>
+
+<script type="text/javascript">
+    if (/(iPhone|iPad|iPod|iOS|Android)/i.test(navigator.userAgent)) {
+        //移动端
+        console.log("------ 移动端");
+    } else {
+        console.log("------ PC端 " + navigator.userAgent);
+
+        addScript("https://cdn.jsdelivr.net/gh/850552586/ericamcdn@0.1/js/live2d.js", () => {
+            // 加载完成后再loadlive2d
+            loadlive2d("live2d", "https://oni.now.sh/media/live2d/assets/hijiki.model.json");
+        });
+
+        var home_Path = "https://oni.now.sh/";
+        addScript("https://oni.now.sh/media/live2d/js/message.js", () => { });
+    }
+
+    // 插入js文件，完成后callback
+    function addScript(jsfile, callback) {
+        var landlord_parent = document.getElementById("landlord-parent");
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = jsfile;
+        landlord_parent.appendChild(script);
+        script.onload = script.onreadystatechange = function () {
+            if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") {
+                script.onload = script.onreadystatechange = null;
+                if (callback && typeof callback == "function") {
+                    callback(); //window[callback]();如果传递字符串过来 调用window['函数名']() 调用方法
+                }
+            }
+        };
+    }
+</script>
     
 </body>
 
