@@ -1,0 +1,235 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>用 Hugo 和 Github 搭建属于自己的博客 - Silver Devastation</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<meta property="og:title" content="用 Hugo 和 Github 搭建属于自己的博客">
+<meta property="og:description" content="天气这么好，不来搭一个博客吗？">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://blog.fluorite.icu/posts/build-your-own-blog-with-hugo-and-github./"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2021-06-06T21:05:13+08:00">
+<meta property="article:modified_time" content="2021-06-06T21:05:13+08:00">
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel="shortcut icon" href=/favicon.ico>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class=logo>
+<a class=logo__link href=/ title="Silver Devastation" rel=home>
+<div class="logo__item logo__text">
+<div class=logo__title>Silver Devastation</div>
+<div class=logo__tagline>请尊敬令人着迷的一切 </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ul class=menu__list>
+<li class=menu__item>
+<a class=menu__link href=/about/>
+<span class=menu__text>About</span>
+</a>
+</li>
+<li class=menu__item>
+<a class=menu__link href=/shining/>
+<span class=menu__text>Shining</span>
+</a>
+</li>
+<li class=menu__item>
+<a class=menu__link href=/message/>
+<span class=menu__text>Message</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<style>@import 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap'</style>
+<script async defer data-website-id=cce6e5ec-cce4-434b-9dd9-7d704aee17be src=https://umm.fluorite.icu/index.js></script>
+<script>(function(){''&&prompt('请输入密语')!==''&&(alert('密语校验失败'),history.back())})()</script>
+<script type=text/javascript color=0,174,255 opacity=0.7 zindex=-2 count=200 src=/js/umbrella.js></script>
+<script src=/js/waterfall.min.js></script>
+<script src=/js/imgStatus.min.js></script>
+<script>document.addEventListener('DOMContentLoaded',()=>{var b=document.getElementsByTagName('gallery')||'',c,e,d;if(b)for(c=0;c<b.length;c++){b[c].innerHTML='<div class="gallery-photos">'+b[c].innerHTML+'</div>',e=b[c].getElementsByTagName('img');for(d=0;d<e.length;d++)f(e[d],document.createElement('div'))}function f(a,b){b.className="gallery-photo",a.parentNode.insertBefore(b,a),b.appendChild(a)}let a=document.querySelectorAll('.gallery-photos')||'';a&&(imgStatus.watch('.gallery-photo img',function(d){var b,c;if(d.isDone())for(b=0;b<a.length;b++){waterfall(a[b]);let d=a[b].querySelectorAll('.gallery-photo');for(c=0;c<d.length;c++)d[c].className+=" visible"}}),window.addEventListener('resize',function(){for(var b=0;b<a.length;b++)waterfall(a[b])}))})</script>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class=main role=main>
+<article class=post>
+<header class=post__header>
+<h1 class=post__title>用 Hugo 和 Github 搭建属于自己的博客</h1>
+<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2021-06-06T21:05:13+08:00>2021-06-06</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/%E9%97%AA%E5%85%89%E4%B9%B1%E7%A0%81%E9%A2%97%E7%B2%92/ rel=category>闪光乱码颗粒</a>
+</span>
+</div>
+</div>
+</header>
+<div class="post__toc toc">
+<div class=toc__title>Page content</div>
+<div class=toc__menu>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#前期准备>前期准备</a>
+<ul>
+<li><a href=#第-1-步安装所需软件>第 1 步：安装所需软件</a></li>
+<li><a href=#第-2-步配置环境变量>第 2 步：配置环境变量</a></li>
+<li><a href=#第-3-步确认安装成功>第 3 步：确认安装成功</a></li>
+</ul>
+</li>
+<li><a href=#开始搭建博客>开始搭建博客</a>
+<ul>
+<li><a href=#第-1-步确认本地博客路径创建-hugo-网站>第 1 步：确认本地博客路径，创建 Hugo 网站</a></li>
+<li><a href=#第-2-步下载主题并配置>第 2 步：下载主题并配置</a></li>
+<li><a href=#第-3-步新建文章>第 3 步：新建文章</a></li>
+<li><a href=#第-4-步构建-hugo-网站>第 4 步：构建 Hugo 网站</a></li>
+<li><a href=#第-5-步更新文章>第 5 步：更新文章</a></li>
+</ul>
+</li>
+<li><a href=#结语>结语</a></li>
+<li><a href=#相关參考>相关參考</a></li>
+</ul>
+</nav>
+</div>
+</div><div class="content post__content clearfix">
+<h2 id=前期准备>前期准备</h2>
+<h3 id=第-1-步安装所需软件>第 1 步：安装所需软件</h3>
+<p>Hugo 是用
+<a href=https://golang.org/ target=_blank>Go</a>
+编写的，支持多个平台。所以我参照官方教程安装了 <strong>Git</strong> 来运行 <strong>Hugo</strong> ，可以点击
+<a href=https://git-scm.com/downloads target=_blank>这里</a>
+下载对应的系统 <strong>Git</strong> 并且安装。</p>
+<p>前往 Github 安装最新版
+<a href=https://github.com/gohugoio/hugo/releases target=_blank>Hugo</a>
+，像我是使用 Windows 10 64 位系统，那么我下载的就是<code>hugo_0.83.1_Windows-64bit.zip</code>。下载完成后解压。</p>
+<p>在 C 盘根目录创建一个 <strong>Hugo</strong> 文件夹，再在 <strong>Hugo</strong> 文件夹中创建一个 <strong>Bin</strong> 文件夹，将刚才解压好的三个文件复制到 <strong>Bin</strong> 文件夹里。即<code>C:\Hugo\Bin</code>文件夹里有<code>hugo.exe</code>、<code>LICENSE</code>、<code>README.md</code>这三个文件。</p>
+<h3 id=第-2-步配置环境变量>第 2 步：配置环境变量</h3>
+<p>在电脑桌面右击<code>此电脑</code>，点击属性，在左侧点击<code>高级系统设置</code>，点击<code>环境变量</code>，点击下方的<code>新建</code>，点击<code>浏览文件</code>，选择<code>C:\Hugo\Bin\hugo.exe</code></p>
+<p>再点击下方系统变量中的<code>Path</code>，点击编辑，点击<code>新建</code>，点击<code>浏览</code>，选择<code>C:\Hugo\Bin</code>，添加完成点击确定、确定、确定。这样环境变量就设置完成了。</p>
+<h3 id=第-3-步确认安装成功>第 3 步：确认安装成功</h3>
+<p>运行<code>Git Bash</code>，输入以下指令：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>brew</span> <span style=color:#a6e22e>install</span> <span style=color:#a6e22e>hugo</span>
+</code></pre></div><p>等待出现<code>/xxx/xxx/hugo/0.83.1:xxxx</code>的 Hugo 版本字样，再输入：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>hugo</span> <span style=color:#a6e22e>version</span>
+</code></pre></div><p>出现<code>Hugo Static Site Generator v0.83.1/extended darwin/amd64 BuildDate: unknown </code>，就表示安装成功啦！此时不要关闭 Git Bash ，接下来都要靠它来完成搭建博客的工作。</p>
+<h2 id=开始搭建博客>开始搭建博客</h2>
+<h3 id=第-1-步确认本地博客路径创建-hugo-网站>第 1 步：确认本地博客路径，创建 Hugo 网站</h3>
+<p>比如我的博客文件夹目录想要存放在 D 盘根目录，那么我在D盘新建一个文件夹<code>MyBlog</code>。</p>
+<p>切回 Git Bash，执行以下命令，新建一个 Hugo 网站，MyBlog 是名字</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>cd</span> <span style=color:#f92672>/</span><span style=color:#a6e22e>d</span><span style=color:#f92672>/</span><span style=color:#a6e22e>MyBlog</span>
+<span style=color:#a6e22e>hugo</span> <span style=color:#a6e22e>new</span> <span style=color:#a6e22e>site</span> <span style=color:#a6e22e>MyBlog</span>
+</code></pre></div><h3 id=第-2-步下载主题并配置>第 2 步：下载主题并配置</h3>
+<p>Hugo 与 Hexo 不一样，没有默认主题，所以需要自主下载博客主题，可前往
+<a href=https://themes.gohugo.io/ target=_blank>themes</a>
+挑选喜爱的主题。下载完成后解压到<code>d/MyBlog/themes</code>文件夹里，如果没有就手动创建一个。</p>
+<p>在下载的主题文件夹里的<code>exampleSite</code>找到<code>config.toml</code>，复制到<code>d/MyBlog</code>文件夹里，打开复制过来的<code>config.toml</code>，在前面第一个<code>baseURL = "https://你的github用户名.github.io/"</code>填写你的 GithubPage，如果有自己的域名，可填写自己的域名网址。</p>
+<h3 id=第-3-步新建文章>第 3 步：新建文章</h3>
+<p>切回 Git Bash ，输入以下指令：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>cd</span> <span style=color:#f92672>/</span><span style=color:#a6e22e>d</span><span style=color:#f92672>/</span><span style=color:#a6e22e>MyBlog</span>
+<span style=color:#a6e22e>hugo</span> <span style=color:#a6e22e>new</span> <span style=color:#a6e22e>post</span><span style=color:#f92672>/</span><span style=color:#a6e22e>第一篇文章</span>.<span style=color:#a6e22e>md</span>
+</code></pre></div><p>这时在<code>D:\MyBlog\content\post\</code>里就会出现<code>第一篇文章.md</code>了，打开并写入你想写的内容即可。</p>
+<p><strong>注意</strong>：新创建的 <strong>md</strong> 文档需要将原来 <strong>draft</strong> (草稿)后的 <strong>true</strong> 改为 <strong>false</strong> 才能在预览的时候加载出来。</p>
+<p>接着可输入以下指令生成本地预览，浏览器输入<code>http://localhost:1313/</code>查看效果，输入<code>Ctrl+C</code>可终止预览。</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>hugo</span> <span style=color:#a6e22e>serve</span>
+<span style=color:#a6e22e>或</span>
+<span style=color:#a6e22e>hugo</span> <span style=color:#a6e22e>server</span> <span style=color:#f92672>-</span><span style=color:#a6e22e>D</span>
+</code></pre></div><h3 id=第-4-步构建-hugo-网站>第 4 步：构建 Hugo 网站</h3>
+<p>输入<code>cd /d/MyBlog</code>，执行 <code>hugo</code> 指令来构建你的 <strong>Hugo</strong> 网站，默认会将静态站点保存到 <strong>public</strong> 目录中。</p>
+<p>接着按顺序执行以下指令：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>cd</span> <span style=color:#f92672>/</span><span style=color:#a6e22e>d</span><span style=color:#f92672>/</span><span style=color:#a6e22e>MyBlog</span><span style=color:#f92672>/</span><span style=color:#a6e22e>public</span>
+<span style=color:#a6e22e>git</span> <span style=color:#a6e22e>init</span>
+<span style=color:#a6e22e>git</span> <span style=color:#a6e22e>remote</span> <span style=color:#a6e22e>add</span> <span style=color:#a6e22e>origin</span> <span style=color:#a6e22e>https</span>:<span style=color:#75715e>//github.com/你的github用户名/你的github用户名.github.io.git
+</span><span style=color:#75715e></span><span style=color:#a6e22e>git</span> <span style=color:#a6e22e>add</span> <span style=color:#f92672>-</span><span style=color:#a6e22e>A</span>
+<span style=color:#a6e22e>git</span> <span style=color:#a6e22e>commit</span> <span style=color:#f92672>-</span><span style=color:#a6e22e>m</span> <span style=color:#e6db74>&#34;first commit&#34;</span>
+<span style=color:#a6e22e>git</span> <span style=color:#a6e22e>push</span> <span style=color:#f92672>-</span><span style=color:#a6e22e>u</span> <span style=color:#a6e22e>origin</span> <span style=color:#a6e22e>master</span>
+</code></pre></div><p>如果遇到<code>time out 443</code>错误，则开启全局代理，执行以下指令：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>git</span> <span style=color:#a6e22e>config</span> <span style=color:#f92672>--</span><span style=color:#a6e22e>global</span> <span style=color:#a6e22e>http</span>.<span style=color:#a6e22e>proxy</span> <span style=color:#a6e22e>http</span>:<span style=color:#75715e>//127.0.0.1:1080
+</span><span style=color:#75715e></span><span style=color:#a6e22e>git</span> <span style=color:#a6e22e>config</span> <span style=color:#f92672>--</span><span style=color:#a6e22e>global</span> <span style=color:#a6e22e>https</span>.<span style=color:#a6e22e>proxy</span> <span style=color:#a6e22e>http</span>:<span style=color:#75715e>//127.0.0.1:1080
+</span></code></pre></div><p>如果还是错误，则把 1080 改成你代理的端口号，比如我是 7890。</p>
+<p>应该不会再错误了，接下来再执行前面构建的步骤：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>git</span> <span style=color:#a6e22e>push</span> <span style=color:#f92672>-</span><span style=color:#a6e22e>u</span> <span style=color:#a6e22e>origin</span> <span style=color:#a6e22e>master</span>
+</code></pre></div><p>成功 push ！恭喜你，搭好了自己的博客！在浏览器访问<code>你的github用户名.github.io</code>就可以看到你的博客啦！</p>
+<h3 id=第-5-步更新文章>第 5 步：更新文章</h3>
+<p>重新走第 3 步，接着按顺序执行以下指令：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-go data-lang=go><span style=color:#a6e22e>hugo</span>
+<span style=color:#a6e22e>cd</span> <span style=color:#a6e22e>public</span>
+<span style=color:#a6e22e>git</span> <span style=color:#a6e22e>add</span> .
+<span style=color:#a6e22e>git</span> <span style=color:#a6e22e>status</span>
+<span style=color:#a6e22e>git</span> <span style=color:#a6e22e>commit</span> <span style=color:#f92672>-</span><span style=color:#a6e22e>m</span> <span style=color:#e6db74>&#34;add blog post&#34;</span>
+<span style=color:#a6e22e>git</span> <span style=color:#a6e22e>push</span>
+</code></pre></div><p>完成！撒花🌸🌸🌸</p>
+<h2 id=结语>结语</h2>
+<p>博客完全属于你自己！不会有屏蔽词来限制你的写作，支持评论，支持自定义 CSS ，完全可以打造出属于符合你审美的完美博客！</p>
+<h2 id=相关參考>相关參考</h2>
+<ul>
+<li>
+<a href=https://suicablog.cobaltkiss.blue/posts/use-github-pages-to-create-your-own-blog-and-deploy-automatically/ target=_blank>利用Github Pages与Github Action搭建并部署Hugo博客</a>
+</li>
+<li>
+<a href=https://blog.csdn.net/yxlshk/article/details/79944535 target=_blank>Git恢复之前版本的两种方法reset、revert</a>
+</li>
+<li>
+<a href=https://lewky.cn/posts/hugo-3.html/ target=_blank>主题美化与博客功能增强</a>
+</li>
+<li>
+<a href=https://www.bahuangshanren.tech/hugo-loveit%E4%BC%98%E5%8C%96%E8%AE%B0/ target=_blank>Hugo+Loveit优化记</a>
+</li>
+</ul>
+</div>
+<footer class=post__footer>
+<div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg>
+<ul class=tags__list>
+<li class=tags__item>
+<a class="tags__link btn" href=/tags/hugo/ rel=tag>Hugo</a>
+</li>
+</ul>
+</div>
+</footer>
+</article>
+</main>
+<nav class="pager flex">
+<div class="pager__item pager__item--prev">
+<a class=pager__link href=/posts/to-build-hugo/ rel=prev>
+<span class=pager__subtitle>«&#8201;Previous</span>
+<p class=pager__title>折腾Hugo终于好了</p>
+</a>
+</div>
+<div class="pager__item pager__item--next">
+<a class=pager__link href=/posts/painful-and-happy-blog-decoration/ rel=next>
+<span class=pager__subtitle>Next&#8201;»</span>
+<p class=pager__title>痛并快乐的博客装修</p>
+</a>
+</div>
+</nav>
+</div>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2023 Silver Devastation.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+<script src=/js/view-image.min.js></script>
+<script>window.ViewImage&&ViewImage.init('.content img')</script>
+<script src=/js/copy-to-clipboard.js></script>
+<script>var s1='2020-09-20',days,number_of_days;s1=new Date(s1.replace(/-/g,"/")),s2=new Date,days=s2.getTime()-s1.getTime(),number_of_days=parseInt(days/(1e3*60*60*24)),document.getElementById('days').innerHTML=number_of_days</script>
+<script src=/js/all.min.js></script>
+<link rel=stylesheet href=/css/APlayer.min.css>
+<script src=/js/APlayer.min.js></script>
+<script src=/js/Meting.min.js></script>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+.message {
+    font-size: 16px;
+    width: 80%;
+    margin: 1rem 0;
+    text-align: right;
+}
+
+.message.--self .message__text {
+    border: 1px solid #5A4A7D;
+    background: rgba(90, 74, 125, 0.5);
+        
+    }
+
+.dark .message.--self .message__text {
+    background-color: rgba(0, 153, 153, 0.1);
+    border: 1px solid #b7dddd15;
+    }
+
+.message.--self .message__text {
+    text-align: left;
+}
+
+.message.--self .message__meta {
+    text-align: right;
+}
+
+
+.message:not(.--self) {
+    text-align: left;
+}
+
+.message__inner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.message__inner img {
+    order: 1;
+}
+
+.message:not(.--self) .message__inner {
+    justify-content: flex-start;
+}
+
+.message:not(.--self) .message__inner img {
+    order: 0;
+}
+
+.dark .message__text {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px;
+    margin-right: 8px;
+    --list-opacity: 1;
+    background-color: rgb(250 250 250 / var(--list-opacity));
+}
+
+.message__text {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    border-radius: var(--radius);
+    padding: 12px;
+    margin-right: 8px;
+    border: 1px solid #191919;
+    background: rgba(25, 25, 25, 0.67);
+}
+
+.message__meta {
+    color: #888;
+    font-size: 0.8em;
+}
+
+.message.--self {
+    margin-left: auto;
+}
+
+.message:not(.--self) {
+    margin-right: auto;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+}
+
+.grid-item .message__img {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.fullsize {
+    object-fit: contain;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+img.avatar{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: inset 0 0 0 1px rgba(105, 105, 105, 0.1);
+    flex-shrink: 0;
+    margin:unset !important;
+}
+
+img.message__img.medium-zoom-image.medium-zoom-image--opened {
+    object-fit: contain;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: unset;
+    box-shadow: unset;
+}
+
+img.message__img {
+    margin: unset !important;
+}
+
+/* 定义手机端样式 */
+@media screen and (max-width: 768px) {
+    .message {
+        width: 90%;
+    }
+}

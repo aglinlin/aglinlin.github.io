@@ -1,0 +1,406 @@
+<!doctype html><html class=no-js lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<title>Markdown - Silver Devastation</title>
+<script>(function(a,b){a[b]=a[b].replace("no-js","js")})(document.documentElement,"className")</script>
+<meta name=description content>
+<meta property="og:title" content="Markdown">
+<meta property="og:description" content="提高写作效率，学习Markdown">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://blog.fluorite.icu/posts/markdown/"><meta property="article:section" content="posts">
+<meta property="article:published_time" content="2020-02-27T18:44:47+08:00">
+<meta property="article:modified_time" content="2020-02-27T18:44:47+08:00">
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link rel=dns-prefetch href=//fonts.googleapis.com>
+<link rel=dns-prefetch href=//fonts.gstatic.com>
+<link rel=stylesheet href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+<link rel=stylesheet href=/css/style.css>
+<link rel="shortcut icon" href=/favicon.ico>
+</head>
+<body class=body>
+<div class="container container--outer">
+<header class=header>
+<div class="container header__container">
+<div class=logo>
+<a class=logo__link href=/ title="Silver Devastation" rel=home>
+<div class="logo__item logo__text">
+<div class=logo__title>Silver Devastation</div>
+<div class=logo__tagline>请尊敬令人着迷的一切 </div>
+</div>
+</a>
+</div>
+<nav class=menu>
+<button class=menu__btn aria-haspopup=true aria-expanded=false tabindex=0>
+<span class=menu__btn-title tabindex=-1>Menu</span>
+</button>
+<ul class=menu__list>
+<li class=menu__item>
+<a class=menu__link href=/about/>
+<span class=menu__text>About</span>
+</a>
+</li>
+<li class=menu__item>
+<a class=menu__link href=/shining/>
+<span class=menu__text>Shining</span>
+</a>
+</li>
+<li class=menu__item>
+<a class=menu__link href=/message/>
+<span class=menu__text>Message</span>
+</a>
+</li>
+</ul>
+</nav>
+</div>
+<style>@import 'https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap'</style>
+<script async defer data-website-id=cce6e5ec-cce4-434b-9dd9-7d704aee17be src=https://umm.fluorite.icu/index.js></script>
+<script>(function(){''&&prompt('请输入密语')!==''&&(alert('密语校验失败'),history.back())})()</script>
+<script type=text/javascript color=0,174,255 opacity=0.7 zindex=-2 count=200 src=/js/umbrella.js></script>
+<script src=/js/waterfall.min.js></script>
+<script src=/js/imgStatus.min.js></script>
+<script>document.addEventListener('DOMContentLoaded',()=>{var b=document.getElementsByTagName('gallery')||'',c,e,d;if(b)for(c=0;c<b.length;c++){b[c].innerHTML='<div class="gallery-photos">'+b[c].innerHTML+'</div>',e=b[c].getElementsByTagName('img');for(d=0;d<e.length;d++)f(e[d],document.createElement('div'))}function f(a,b){b.className="gallery-photo",a.parentNode.insertBefore(b,a),b.appendChild(a)}let a=document.querySelectorAll('.gallery-photos')||'';a&&(imgStatus.watch('.gallery-photo img',function(d){var b,c;if(d.isDone())for(b=0;b<a.length;b++){waterfall(a[b]);let d=a[b].querySelectorAll('.gallery-photo');for(c=0;c<d.length;c++)d[c].className+=" visible"}}),window.addEventListener('resize',function(){for(var b=0;b<a.length;b++)waterfall(a[b])}))})</script>
+</header>
+<div class="wrapper flex">
+<div class=primary>
+<main class=main role=main>
+<article class=post>
+<header class=post__header>
+<h1 class=post__title>Markdown</h1>
+<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class=meta__text datetime=2020-02-27T18:44:47+08:00>2020-02-27</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class=meta__text><a class=meta__link href=/categories/%E9%97%AA%E5%85%89%E4%B9%B1%E7%A0%81%E9%A2%97%E7%B2%92/ rel=category>闪光乱码颗粒</a>
+</span>
+</div>
+</div>
+</header>
+<div class="post__toc toc">
+<div class=toc__title>Page content</div>
+<div class=toc__menu>
+<nav id=TableOfContents>
+<ul>
+<li><a href=#基础元素>基础元素</a>
+<ul>
+<li><a href=#标题>标题</a></li>
+<li><a href=#分割线>分割线</a></li>
+<li><a href=#摘要>摘要</a></li>
+<li><a href=#脚注>脚注</a></li>
+<li><a href=#列表>列表</a></li>
+<li><a href=#引用>引用</a></li>
+<li><a href=#表格>表格</a></li>
+<li><a href=#链接>链接</a></li>
+<li><a href=#图片>图片</a></li>
+<li><a href=#代码>代码</a></li>
+<li><a href=#反斜杠>反斜杠<code>\</code></a></li>
+</ul>
+</li>
+<li><a href=#借助html丰富编辑格式>借助HTML丰富编辑格式</a>
+<ul>
+<li><a href=#文字颜色大小>文字颜色&大小</a></li>
+<li><a href=#文字上标下标>文字上标&下标</a></li>
+<li><a href=#换行空格>换行&空格</a></li>
+<li><a href=#新标签页打开>新标签页打开</a></li>
+<li><a href=#高亮文本>高亮文本</a></li>
+<li><a href=#位置>位置</a></li>
+<li><a href=#图片设置高宽>图片设置高宽</a></li>
+<li><a href=#文本提示>文本提示</a></li>
+<li><a href=#注音>注音</a></li>
+<li><a href=#折叠>折叠</a></li>
+<li><a href=#禁止文字复制和选中>禁止文字复制和选中</a></li>
+<li><a href=#嵌入音视频>嵌入音视频</a></li>
+</ul>
+</li>
+<li><a href=#相关参考>相关参考</a></li>
+</ul>
+</nav>
+</div>
+</div><div class="content post__content clearfix">
+<h2 id=基础元素>基础元素</h2>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>|     效果      |    Markdown     |      HTML tag       |
+| :-----------: | :-------------: | :-----------------: |
+|    <span style=font-style:italic>*斜体*</span>     |    <span style=color:#e6db74>`*斜体*`</span>     |     <span style=color:#e6db74>`&lt;em&gt;&lt;/em&gt;`</span>     |
+|   <span style=font-weight:700>**加粗**</span>    |   <span style=color:#e6db74>`**加粗**`</span>    | <span style=color:#e6db74>`&lt;strong&gt;&lt;/strong&gt;`</span> |
+|    <span style=color:#e6db74>`代码`</span>     |    ``代码``     |   <span style=color:#e6db74>`&lt;code&gt;&lt;/code&gt;`</span>   |
+|  <span style=color:#f92672>~~删除线~~</span>   |  <span style=color:#e6db74>`~~删除线~~`</span>   |    <span style=color:#e6db74>`&lt;del&gt;&lt;/del`</span>     |
+| &lt;<span style=color:#f92672>u</span>&gt;下划线&lt;/<span style=color:#f92672>u</span>&gt; | <span style=color:#e6db74>`&lt;u&gt;下划线&lt;/u&gt;`</span> |      <span style=color:#e6db74>`&lt;u&gt;&lt;/u&gt;`</span>      |
+</code></pre></div><table>
+<thead>
+<tr>
+<th style=text-align:center>效果</th>
+<th style=text-align:center>Markdown</th>
+<th style=text-align:center>HTML tag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style=text-align:center><em>斜体</em></td>
+<td style=text-align:center><code>*斜体*</code></td>
+<td style=text-align:center><code>&lt;em>&lt;/em></code></td>
+</tr>
+<tr>
+<td style=text-align:center><strong>加粗</strong></td>
+<td style=text-align:center><code>**加粗**</code></td>
+<td style=text-align:center><code>&lt;strong>&lt;/strong></code></td>
+</tr>
+<tr>
+<td style=text-align:center><code>代码</code></td>
+<td style=text-align:center><code>代码</code></td>
+<td style=text-align:center><code>&lt;code>&lt;/code></code></td>
+</tr>
+<tr>
+<td style=text-align:center><del>删除线</del></td>
+<td style=text-align:center><code>~~删除线~~</code></td>
+<td style=text-align:center><code>&lt;del>&lt;/del</code></td>
+</tr>
+<tr>
+<td style=text-align:center><u>下划线</u></td>
+<td style=text-align:center><code>&lt;u>下划线&lt;/u></code></td>
+<td style=text-align:center><code>&lt;u>&lt;/u></code></td>
+</tr>
+</tbody>
+</table>
+<h3 id=标题>标题</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=color:#75715e>&lt;!-- 注意#后要空格 --&gt;</span>
+# 一级标题
+<span style=color:#75715e>## 二级标题
+</span><span style=color:#75715e>### 三级标题
+</span><span style=color:#75715e>#### 四级标题
+</span><span style=color:#75715e>##### 五级标题
+</span><span style=color:#75715e>###### 六级标题
+</span></code></pre></div><h3 id=分割线>分割线</h3>
+<p>三个或三个以上的 <code>***或 --- 或 ___</code></p>
+<h3 id=摘要>摘要</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>&lt;\!<span style=color:#f92672>--more--</span>&gt;       ///去掉感叹号前面的反斜杠
+</code></pre></div><h3 id=脚注>脚注</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown> 欢迎 [^1]。
+ [^1]: 点击箭头可返回（这一句要放置在文末）
+</code></pre></div><p>欢迎 <sup id=fnref:1><a href=#fn:1 class=footnote-ref role=doc-noteref>1</a></sup></p>
+<h3 id=列表>列表</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=color:#75715e>&lt;!-- 有序列表 --&gt;</span>
+<span style=color:#66d9ef>1.</span> 需要空格
+<span style=color:#66d9ef>2.</span> 第二个
+</code></pre></div>
+<ol>
+<li>需要空格</li>
+<li>第二个</li>
+</ol>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=color:#75715e>&lt;!-- 无序列表 --&gt;</span>
+<span style=color:#66d9ef>-</span> 也要空格
+<span style=color:#66d9ef>-</span> 你好！
+</code></pre></div>
+<ul>
+<li>也要空格</li>
+<li>你好！</li>
+</ul>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=color:#75715e>&lt;!-- 任务列表 --&gt;</span>
+<span style=color:#66d9ef>- [ ]</span> 还没完成（中间有空格）
+<span style=color:#66d9ef>- [x]</span> 完成了
+</code></pre></div>
+<ul>
+<li><input disabled type=checkbox> 还没完成（中间有空格）</li>
+<li><input checked disabled type=checkbox> 完成了</li>
+</ul>
+<h3 id=引用>引用</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown><span style=color:#66d9ef>&gt; </span><span style=font-style:italic>需要空格
+</span><span style=font-style:italic></span><span style=color:#66d9ef>&gt; </span><span style=font-style:italic>&gt;继续引用
+</span></code></pre></div><blockquote>
+<p>需要空格</p>
+<blockquote>
+<p>继续引用</p>
+</blockquote>
+</blockquote>
+<h3 id=表格>表格</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>| 左对齐 | 居中  | 右对齐 |
+| ------ | :---: | -----: |
+| Hello  | World |   你好 |
+</code></pre></div><table>
+<thead>
+<tr>
+<th>左对齐</th>
+<th style=text-align:center>居中</th>
+<th style=text-align:right>右对齐</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hello</td>
+<td style=text-align:center>World</td>
+<td style=text-align:right>你好</td>
+</tr>
+</tbody>
+</table>
+<h3 id=链接>链接</h3>
+<p>方法一：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>[<span style=color:#f92672>链接标题</span>](<span style=color:#a6e22e>链接地址</span>)
+</code></pre></div><p>
+<a href=%e9%93%be%e6%8e%a5%e5%9c%b0%e5%9d%80>链接标题</a>
+</p>
+<p>方法二：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>[链接标题1][1]
+[链接标题2][2]
+
+[1]:链接地址
+[2]:链接地址
+</code></pre></div><p>
+<a href=%e9%93%be%e6%8e%a5%e5%9c%b0%e5%9d%80%3cbr%3e>链接标题1</a>
+<br>
+<a href=%e9%93%be%e6%8e%a5%e5%9c%b0%e5%9d%80>链接标题2</a>
+</p>
+<h3 id=图片>图片</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>![](图片地址)
+</code></pre></div><p><figure>
+<center><img loading=lazy src=https://5b0988e595225.cdn.sohucs.com/images/20170808/6c404f644033432aab409418a4a8a273.jpeg alt>
+<center>
+</figure></p>
+<p>或</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>img</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;图片地址&#34;</span>&gt;
+</code></pre></div><img src=https://5b0988e595225.cdn.sohucs.com/images/20170808/6c404f644033432aab409418a4a8a273.jpeg>
+<h3 id=代码>代码</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown> <span style=color:#e6db74>`代码内容`</span> 
+<span style=color:#75715e>&lt;!-- 代码块是用```包住代码 --&gt;</span>
+</code></pre></div><h3 id=反斜杠>反斜杠<code>\</code></h3>
+<p>相当于<strong>反转义</strong>作用。使符号成为普通符号。</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-markdown data-lang=markdown>\# 我只想要一个井号
+\* 我只想要一个星号
+</code></pre></div><p># 我只想要一个井号</p>
+<p>* 我只想要一个星号</p>
+<h2 id=借助html丰富编辑格式>借助HTML丰富编辑格式</h2>
+<h3 id=文字颜色大小>文字颜色&大小</h3>
+<p>颜色可查询
+<a href=https://htmlcolorcodes.com/color-picker/ target=_blank>HTML颜色名称</a>
+或
+<a href=https://htmlcolorcodes.com/color-picker/ target=_blank>十六进制的颜色编码</a>
+</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>font</span> <span style=color:#a6e22e>size</span><span style=color:#f92672>=</span><span style=color:#e6db74>5px</span>&gt;这是5px的字号&lt;/<span style=color:#f92672>font</span>&gt;
+&lt;<span style=color:#f92672>font</span> <span style=color:#a6e22e>color</span><span style=color:#f92672>=</span><span style=color:#e6db74>#208BFF</span>&gt;这是蓝色的字&lt;/<span style=color:#f92672>font</span>&gt;
+&lt;<span style=color:#f92672>font</span> <span style=color:#a6e22e>size</span><span style=color:#f92672>=</span><span style=color:#e6db74>5px</span> <span style=color:#a6e22e>color</span><span style=color:#f92672>=</span><span style=color:#e6db74>#208BFF</span>&gt;这是蓝色的字&lt;/<span style=color:#f92672>font</span>&gt;
+</code></pre></div><p><font size=5px>这是5px的字号</font></p>
+<p><font color=#208BFF>这是蓝色的字</font></p>
+<p><font size=5px color=#208BFF>这是蓝色的五号字</font></p>
+<h3 id=文字上标下标>文字上标&下标</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>这是上标&lt;<span style=color:#f92672>sup</span>&gt;2&lt;/<span style=color:#f92672>sup</span>&gt;
+这是下标&lt;<span style=color:#f92672>sub</span>&gt;1&lt;/<span style=color:#f92672>sub</span>&gt;
+</code></pre></div><p>这是上标<sup>2</sup></p>
+<p>这是下标<sub>1</sub></p>
+<h3 id=换行空格>换行&空格</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>br</span>&gt;<span style=color:#75715e>&lt;!-- 换行 --&gt;</span>
+&amp;nbsp;  <span style=color:#75715e>&lt;!-- 一个字符的半角的空格 --&gt;</span>
+&amp;ensp;  <span style=color:#75715e>&lt;!-- 一个字符的半角的空格（1/2个中文宽度） --&gt;</span>
+&amp;emsp;  <span style=color:#75715e>&lt;!-- 两个字符的全角的空格（1个中文宽度） --&gt;</span>
+&amp;thinsp;  <span style=color:#75715e>&lt;!-- 小于一个字符的空格 --&gt;</span>
+</code></pre></div><h3 id=新标签页打开>新标签页打开</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>a</span> <span style=color:#a6e22e>href</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;链接地址&#34;</span> <span style=color:#a6e22e>target</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;_blank&#34;</span>&gt;链接标题&lt;/<span style=color:#f92672>a</span>&gt;
+</code></pre></div><p><a href=链接地址 target=_blank>链接标题</a></p>
+<h3 id=高亮文本>高亮文本</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>mark</span>&gt;高亮文本&lt;/<span style=color:#f92672>mark</span>&gt;
+</code></pre></div><p><mark>高亮文本</mark></p>
+<h3 id=位置>位置</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>center</span>&gt;居中&lt;/<span style=color:#f92672>center</span>&gt;
+&lt;<span style=color:#f92672>p</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text-align:left&#34;</span>&gt;居左&lt;/<span style=color:#f92672>p</span>&gt;
+&lt;<span style=color:#f92672>p</span> <span style=color:#a6e22e>style</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text-align:right&#34;</span>&gt;居右&lt;/<span style=color:#f92672>p</span>&gt;
+</code></pre></div><center>居中</center>
+<p style=text-align:left>居左</p>
+<p style=text-align:right>居右</p>
+<h3 id=图片设置高宽>图片设置高宽</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>img</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;图片地址&#34;</span>  <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;300&#34;</span> <span style=color:#a6e22e>height</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;300&#34;</span>&gt;
+</code></pre></div><h3 id=文本提示>文本提示</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>abbr</span> <span style=color:#a6e22e>title</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;显示内容&#34;</span>&gt;将鼠标移上来看看&lt;/<span style=color:#f92672>abbr</span>&gt;
+</code></pre></div><p><abbr title=显示内容>将鼠标移上来看看</abbr></p>
+<h3 id=注音>注音</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>ruby</span>&gt;你好&lt;<span style=color:#f92672>rt</span>&gt;Ni Hao&lt;/<span style=color:#f92672>rt</span>&gt;！&lt;<span style=color:#f92672>ruby</span>&gt;
+</code></pre></div><p><ruby>你好<rt>Ni Hao</rt>！<ruby></p>
+<h3 id=折叠>折叠</h3>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>details</span>&gt;
+&lt;<span style=color:#f92672>summary</span>&gt;点击展开文本&lt;/<span style=color:#f92672>summary</span>&gt;
+&lt;<span style=color:#f92672>p</span>&gt;Hello World!&lt;/<span style=color:#f92672>p</span>&gt;
+&lt;/<span style=color:#f92672>details</span>&gt;
+</code></pre></div><details>
+<summary>点击展开文本</summary>
+<p>Hello World!</p>
+</details>
+<h3 id=禁止文字复制和选中>禁止文字复制和选中</h3>
+<p>在文章中加入以下这段代码</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>body</span> <span style=color:#a6e22e>oncontextmenu</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#39;return false&#39;</span> <span style=color:#a6e22e>ondragstart</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#39;return false&#39;</span> <span style=color:#a6e22e>onselectstart </span><span style=color:#f92672>=</span><span style=color:#e6db74>&#39;return false&#39;</span> <span style=color:#a6e22e>onselect</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#39;document.selection.empty()&#39;</span> <span style=color:#a6e22e>oncopy</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#39;document.selection.empty()&#39;</span> <span style=color:#a6e22e>onbeforecopy</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#39;return false&#39;</span> <span style=color:#a6e22e>onmouseup</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#39;document.selection.empty()&#39;</span>&gt;
+</code></pre></div><h3 id=嵌入音视频>嵌入音视频</h3>
+<h4 id=视频方法一嵌入视频网站给的html代码>视频方法一：嵌入视频网站给的HTML代码。</h4>
+<p>B站等默认生成的代码窗口太小，需要调整，嵌入代码：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>iframe</span> <span style=color:#a6e22e>id</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;sp&#34;</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;视频网站提供的代码地址&amp;high_quality=1&#34;</span> <span style=color:#a6e22e>scrolling</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;no&#34;</span> <span style=color:#a6e22e>border</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;0&#34;</span> <span style=color:#a6e22e>frameborder</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;no&#34;</span> <span style=color:#a6e22e>framespacing</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;0&#34;</span> <span style=color:#a6e22e>allowfullscreen</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;true&#34;</span> <span style=color:#a6e22e>width</span><span style=color:#f92672>=</span><span style=color:#e6db74>100%</span>&gt; &lt;/<span style=color:#f92672>iframe</span>&gt; 
+
+&lt;<span style=color:#f92672>script</span> <span style=color:#a6e22e>type</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;text/javascript&#34;</span>&gt;   document.<span style=color:#a6e22e>getElementById</span>(<span style=color:#e6db74>&#34;sp&#34;</span>).<span style=color:#a6e22e>style</span>.<span style=color:#a6e22e>height</span><span style=color:#f92672>=</span>document.<span style=color:#a6e22e>getElementById</span>(<span style=color:#e6db74>&#34;sp&#34;</span>).<span style=color:#a6e22e>scrollWidth</span><span style=color:#f92672>*</span><span style=color:#ae81ff>0.76</span><span style=color:#f92672>+</span><span style=color:#e6db74>&#34;px&#34;</span>; &lt;/<span style=color:#f92672>script</span>&gt;
+</code></pre></div><iframe id=sp src="//player.bilibili.com/player.html?aid=1525216&bvid=BV1px411K7XH&cid=2312396&page=1&high_quality=1&autoplay=0" scrolling=no border=0 frameborder=no framespacing=0 allowfullscreen width=100%></iframe>
+<script type=text/javascript>document.getElementById("sp").style.height=document.getElementById("sp").scrollWidth*.76+"px"</script>
+<br>
+<p>Youtube等生成的代码已经预先设置了播放窗口尺寸，没有特殊需求的话不需要手动调整。</p>
+<div class=videobox><iframe width=560 height=315 src=https://www.youtube.com/embed/cqBKMGuZC6I title="YouTube video player" frameborder=0 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<h4 id=视频方法二添加视频直链地址>视频方法二：添加视频直链地址。</h4>
+<p><video src="https://drive.fluorite.one/api?path=/%F0%9F%8C%9E%20Private%20folder/Never%20Gonna%20Give%20You.mp4&raw=true" controls></video></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>video</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;视频地址（地址结尾为.mp4等视频格式）&#34;</span> <span style=color:#a6e22e>controls</span>&gt;&lt;/<span style=color:#f92672>video</span>&gt;
+</code></pre></div><br>
+<h4 id=音频方法一嵌入音频网站给的html代码>音频方法一：嵌入音频网站给的HTML代码。</h4>
+<iframe frameborder=no border=0 marginwidth=0 marginheight=0 width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1820266508&auto=0&height=66"></iframe>
+<h4 id=音频方法二添加音频直链地址>音频方法二：添加音频直链地址。</h4>
+<p><audio src="https://music.163.com/song/media/outer/url?id=1820266508.mp3" controls></audio></p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-html data-lang=html>&lt;<span style=color:#f92672>audio</span> <span style=color:#a6e22e>src</span><span style=color:#f92672>=</span><span style=color:#e6db74>&#34;音频地址（地址结尾为.mp3等音频格式）&#34;</span> <span style=color:#a6e22e>controls</span>&gt;&lt;/<span style=color:#f92672>audio</span>&gt;
+</code></pre></div><h2 id=相关参考>相关参考</h2>
+<ul>
+<li>
+<a href=https://blog.mysto.cyou/posts/200913-blogedit/ target=_blank>Markdown丨博客编辑进阶技巧</a>
+</li>
+<li>
+<a href=http://younghz.github.io/Markdown/ target=_blank>Markdown</a>
+</li>
+<li>
+<a href=https://docs.github.com/cn/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax target=_blank>Github-Markdonw基本书写和格式化语法</a>
+</li>
+</ul>
+<section class=footnotes role=doc-endnotes>
+<hr>
+<ol>
+<li id=fn:1 role=doc-endnote>
+<p>点击箭头可返回（这一句要放置在文末） ↩︎&#160;<a href=#fnref:1 class=footnote-backref role=doc-backlink>&#8617;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+</div>
+<footer class=post__footer>
+<div class="post__tags tags clearfix"><svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5.0 11V3C0 1.5.8.8.8.8S1.5.0 3 0h8c1.5.0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 100-6 3 3 0 000 6z"/></svg>
+<ul class=tags__list>
+<li class=tags__item>
+<a class="tags__link btn" href=/tags/%E6%95%88%E7%8E%87/ rel=tag>效率</a>
+</li>
+</ul>
+</div>
+</footer>
+</article>
+</main>
+<nav class="pager flex">
+<div class="pager__item pager__item--next">
+<a class=pager__link href=/posts/dream/ rel=next>
+<span class=pager__subtitle>Next&#8201;»</span>
+<p class=pager__title>夢日记</p>
+</a>
+</div>
+</nav>
+</div>
+</div>
+<footer class=footer>
+<div class="container footer__container flex">
+<div class=footer__copyright>
+&copy; 2023 Silver Devastation.
+<span class=footer__copyright-credits>Generated with <a href=https://gohugo.io/ rel="nofollow noopener" target=_blank>Hugo</a> and <a href=https://github.com/Vimux/Mainroad/ rel="nofollow noopener" target=_blank>Mainroad</a> theme.</span>
+</div>
+</div>
+<script src=/js/view-image.min.js></script>
+<script>window.ViewImage&&ViewImage.init('.content img')</script>
+<script src=/js/copy-to-clipboard.js></script>
+<script>var s1='2020-09-20',days,number_of_days;s1=new Date(s1.replace(/-/g,"/")),s2=new Date,days=s2.getTime()-s1.getTime(),number_of_days=parseInt(days/(1e3*60*60*24)),document.getElementById('days').innerHTML=number_of_days</script>
+<script src=/js/all.min.js></script>
+<link rel=stylesheet href=/css/APlayer.min.css>
+<script src=/js/APlayer.min.js></script>
+<script src=/js/Meting.min.js></script>
+</footer>
+</div>
+<script async defer src=/js/menu.js></script>
+</body>
+</html>
