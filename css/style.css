@@ -1593,9 +1593,9 @@ textarea {
 		  position: absolute;
 		  left: 0.8em;
 		  .simple-notice-icon {
-			  width: 0em; 
-			  height: 0em; 
-			  margin-left: -0.5em; 
+			  width: 1em; 
+			  height: 1em; 
+			  margin-left: -0.8em; 
 		  }
 	  }
 	  &.simple-notice-warning {
@@ -1608,6 +1608,7 @@ textarea {
 			  color: hsl(0, 100%, 35%);
 			  text-decoration-color: hsl(0, 100%, 35%);
 		  }
+		  fill: #A43420;
 	  }
 	  &.simple-notice-info {
 		  border-top: 2px solid hsl(40, 80%, 45%);
@@ -1619,6 +1620,7 @@ textarea {
 			  color: hsl(40, 80%, 45%);
 			  text-decoration-color: hsl(40, 80%, 45%);
 		  }
+		  fill: #A47320;
 	  }
 	  &.simple-notice-note {
 		  border-top: 2px solid hsl(210, 100%, 25%);
@@ -1630,6 +1632,7 @@ textarea {
 			  color: hsl(210, 100%, 25%);
 			  text-decoration-color: hsl(210, 100%, 25%);
 		  }
+		  fill: #205AA4;
 	  }
 	  &.simple-notice-tip {
 		  border-top: 2px solid hsl(150, 100%, 25%);
@@ -1641,6 +1644,7 @@ textarea {
 			  color: hsl(150, 100%, 25%);
 			  text-decoration-color: hsl(150, 100%, 25%);
 		  }
+		  fill: #39A420;
 	  }
   }
   
@@ -1693,30 +1697,26 @@ textarea {
   
   
   .github {
-	  border: 1px solid var(--color-contrast-low);
+	  border: 1px solid;
 	  border-radius: 3px;
 	  margin: 0 auto;
 	  margin-bottom: 1em;
 	  padding: 1em;
-	  background: #F0F2FF;
-	  max-width: 500px;
+
 	  .github-icon {
 		  width: 1.0em;
 		  height: 1.0em;
 		  margin-right: 0.5em;
-		  margin-bottom: 0.2em;
-		  fill: var(--color-contrast-high);
+		  fill: #fff;
 		  transition: all .5s;
 	  }
 	  .name {
 		  font-weight: bold;
-		  color: #3363FF;
 		  text-decoration: none;
 	  }
 	  .description {
 		  margin-top: 0.5em;
 		  margin-bottom: 1em;
-		  color: var(--color-contrast-high);
 		  text-align: justify;
 		  font-size: 90%;
 		  transition: all .5s;
@@ -1730,10 +1730,12 @@ textarea {
 		  border-radius: 50%;
 	  }
 	  .language-name {
-		  color: var(--color-contrast-high);
 		  font-size: 90%;
 		  margin-left: 0.5em;
 		  transition: all .5s;
+	  }
+	  .logo {
+	  padding: 0px;
 	  }
   }
   
