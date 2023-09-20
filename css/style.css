@@ -1950,3 +1950,56 @@ a:hover{
 		margin-left: 1px;
 	}
 }
+
+.blogroll-link::after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
+.blogroll-link {
+    display: grid;
+    grid-gap: 0 1.5em;
+    grid-template-columns: 1fr 1fr;
+}
+
+.blogroll {
+    padding:1em 0;
+    border-bottom:1px dashed;
+    display:flex;
+    transition:all .5s;
+    text-decoration:none !important;
+    overflow:hidden;
+}
+.blogroll .friend {
+    text-decoration:none;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+}
+.blogroll .name {
+    font-weight:bold;
+    margin:0.375em 0;
+	color: #FFE679;
+}
+.blogroll .excerpt {
+    font-size:0.875em;
+    text-overflow:ellipsis;
+    overflow:hidden;
+    white-space:nowrap;
+	color: #c6c6c6;
+}
+.blogroll .avatar {
+    width:4em !important;
+    height:4em !important;
+    margin:0 1em 0 0 !important;
+    pointer-events:none;
+    z-index:0;
+}
+@media (max-width: 752px) {
+  .blogroll-link {
+    grid-template-columns:1fr;
+  }
+}
+
+
