@@ -1737,6 +1737,9 @@ textarea {
 	  .logo {
 	  padding: 0px;
 	  }
+	  .svg-inline--fa {
+	  padding-right: 5px;
+	  }
   }
   
 
