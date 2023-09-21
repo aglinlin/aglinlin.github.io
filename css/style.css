@@ -1998,6 +1998,7 @@ a:hover{
     margin:0 1em 0 0 !important;
     pointer-events:none;
     z-index:0;
+	border-radius: 50px;
 }
 @media (max-width: 752px) {
   .blogroll-link {
