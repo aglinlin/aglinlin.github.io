@@ -39,6 +39,7 @@ html {
 	font-size: 100%;
 	-ms-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
+     scrollbar-color: #373737 rgba(0,0,0,.1);
 }
 
 body {
