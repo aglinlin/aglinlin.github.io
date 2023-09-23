@@ -1742,7 +1742,13 @@ textarea {
 	  padding-right: 5px;
 	  }
   }
-  
+  @media (max-width: 752px) {
+	.github {
+		.logo {
+			text-align: left;
+		  }
+       }
+  }
 
   
   blockquote.quote-center {
