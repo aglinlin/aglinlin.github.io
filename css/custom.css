@@ -20,60 +20,131 @@
 
 
   
-  blockquote.quote {
-	  position: relative;
-	  margin: 1.5em -10em 0 -10 ;
-	  padding-left: 18%;
-	  padding-right: 15%;
-	  border: none;
-	  background-color: transparent;;
-	  &::before {
-		  position: absolute;
-		  left: 7%;
-		  content: '“';
-		  color: var(--color-contrast-low);
-		  font-size: 3em;
-		  font-weight: bold;
-		  line-height: 1;
-	  }
-	  &.poetry {
-		  display: table;
-		  padding: 0;
-		  &::before {
-			  left: -1em;
-		  }
-		  p:last-child {
-			  margin: 0;
-		  }
-	  }
-	  &.en {
-		  p {
-			  line-height: 1.618;
-			  text-align: left;
-			  hyphens: auto;
-			  -webkit-hyphens: auto;
-			  -moz-hyphens: auto;
-		  }
-	  }
+blockquote.quote {
+  position: relative;
+  margin: 1.5em -10em 0 -10;
+  padding-left: 18%;
+  padding-right: 15%;
+  border: none;
+  background-color: transparent;
+}
+
+blockquote.quote::before {
+  position: absolute;
+  left: 7%;
+  content: '“';
+  color: var(--color-contrast-low);
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+blockquote.quote.poetry {
+  display: table;
+  padding: 0;
+}
+
+blockquote.quote.poetry::before {
+  left: -1em;
+}
+
+blockquote.quote.poetry p:last-child {
+  margin: 0;
+}
+
+blockquote.quote.en p {
+  line-height: 1.618;
+  text-align: left;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+}
+
+@media (max-width: 650px) {
+  blockquote.quote::before {
+    position: absolute;
+    left: 3.5%;
   }
-  @media (max-width:650px) {
-	  blockquote.quote {
-		  &::before {
-			  position: absolute;
-			  left: 3.5%;          
-		  }
-	  }
+}
+
+@media (max-width: 500px) {
+  blockquote.quote::before {
+    position: absolute;
+    left: 3.5%;
+    top: 0.1%;
   }
-  
-  @media (max-width:500px) {
-	  blockquote.quote {
-		  &::before {
-			  position: absolute;
-			  left: 3.5%; 
-			  top: 0.1%         
-		  }
-	  }
-  }
+}
+
+blockquote.quote-center {
+  position: relative;
+  margin: 1.5em -10em 0 -10;
+  padding-left: 18%;
+  padding-right: 15%;
+  border: none;
+  background-color: transparent;
+}
+
+blockquote.quote-center p {
+  text-align: center !important;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+blockquote.quote-center::before {
+  position: absolute;
+  left: 7%;
+  content: '“';
+  color: var(--color-contrast-low);
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: -0.25em;
+}
+
+blockquote.quote-center::after {
+  position: absolute;
+  right: 7%;
+  content: '”';
+  color: var(--color-contrast-low);
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: -0.75em;
+}
+
+blockquote.quote-center {
+  position: relative;
+  margin: 1.5em -10em 0 -10;
+  padding-left: 18%;
+  padding-right: 15%;
+  border: none;
+  background-color: transparent;
+}
+
+blockquote.quote-center p {
+  text-align: center !important;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+blockquote.quote-center::before {
+  position: absolute;
+  left: 7%;
+  content: '“';
+  color: var(--color-contrast-low);
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: -0.25em;
+}
+
+blockquote.quote-center::after {
+  position: absolute;
+  right: 7%;
+  content: '”';
+  color: var(--color-contrast-low);
+  font-size: 3em;
+  font-weight: bold;
+  margin-top: -0.75em;
+}
+
   
   
   
@@ -732,40 +803,6 @@
        }
   }
 
-  
-
-  blockquote.quote-center {
-	  position: relative;
-	  margin: 1.5em -10em 0 -10 ;
-	  padding-left: 18%;
-	  padding-right: 15%;
-	  border: none;
-	  background-color: transparent;;
-	  p{
-		  text-align: center !important;
-		  margin-top: 1.5em;
-		  margin-bottom: 1.5em;
-	  }
-	  &::before {
-		  position: absolute;
-		  left: 7%;
-		  content: '“';
-		  color: var(--color-contrast-low);
-		  font-size: 3em;
-		  font-weight: bold;
-		  margin-top: -0.25em;
-	  }
-	  &::after {
-		  position: absolute;
-		  right: 7%;
-		  content: '”';
-		  color: var(--color-contrast-low);
-		  font-size: 3em;
-		  font-weight: bold;
-		  margin-top: -0.75em;
-	  }
-  }
-  
 
 
 .message {
