@@ -1,0 +1,67 @@
+User-agent: *
+
+Disallow: /categories/
+
+Disallow: /posts/
+
+Disallow: /
+
+Disallow: /posts/add-robotstxt/
+
+Disallow: /categories/%E6%B7%B1%E6%B5%B7%E7%94%B5%E9%9F%B3%E5%92%92%E8%AF%AD/
+
+Disallow: /posts/dental-care/
+
+Disallow: /tags/
+
+Disallow: /posts/i-got-a-cat/
+
+Disallow: /tags/%E7%8C%AB/
+
+Disallow: /tags/%E9%9A%8F%E6%83%B3/
+
+Disallow: /posts/recently-watch-dramas/
+
+Disallow: /tags/mikumikudance/
+
+Disallow: /posts/create-a-mmd/
+
+Disallow: /tags/hugo/
+
+Disallow: /posts/blog-rebuilding-and-renovation/
+
+Disallow: /categories/%E9%97%AA%E5%85%89%E4%B9%B1%E7%A0%81%E9%A2%97%E7%B2%92/
+
+Disallow: /tags/%E6%8E%A8%E8%8D%90/
+
+Disallow: /posts/recommended-software/
+
+Disallow: /posts/to-know-fediverse/
+
+Disallow: /posts/painful-and-happy-blog-decoration/
+
+Disallow: /posts/build-your-own-blog-with-hugo-and-github./
+
+Disallow: /posts/to-build-hugo/
+
+Disallow: /posts/enjoy/
+
+Disallow: /posts/dream/
+
+Disallow: /posts/markdown/
+
+Disallow: /tags/%E6%95%88%E7%8E%87/
+
+Disallow: /about/
+
+Disallow: /sweetie/
+
+Disallow: /message/
+
+Disallow: /search/
+
+Disallow: /shining/
+
+Disallow: /tags-wall/
+
+Disallow: /somnus/
