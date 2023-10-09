@@ -1006,75 +1006,7 @@ img.message__img {
   
 
 
-  .mark_green {
-    background: repeating-linear-gradient(-45deg,var(--color_mark_green),var(--color_mark_green) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;
-	display: inline;
-    padding: 2px;
-	font-weight: bold;
-  }
-
-  .mark_yellow {
-    background: repeating-linear-gradient(-45deg,var(--color_mark_yellow),var(--color_mark_yellow) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;
-	display: inline;
-    padding: 2px;
-	font-weight: bold;
-  }
-
-  .mark_blue {
-    background: repeating-linear-gradient(-45deg,var(--color_mark_blue),var(--color_mark_blue) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;
-	display: inline;
-    padding: 2px;
-	font-weight: bold;
-  }
-
-  .mark_orange {
-    background: repeating-linear-gradient(-45deg,var(--color_mark_orange),var(--color_mark_orange) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;
-	display: inline;
-    padding: 2px;
-	font-weight: bold;
-  }
-
-  .mark_red {
-    background: repeating-linear-gradient(-45deg,var(--color_mark_red),var(--color_mark_red) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;
-	display: inline;
-    padding: 2px;
-	font-weight: bold;
-  }
-
-  .mark_greendark {
-    background: repeating-linear-gradient(-45deg,var(--color_mark_greendark),var(--color_mark_greendark) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;
-	display: inline;
-    padding: 2px;
-	font-weight: bold;
-  }
-
-  .mark_yellowdark {
-    background: repeating-linear-gradient(-45deg,var(--color_mark_yellowdark),var(--color_mark_yellowdark) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;
-	display: inline;
-    padding: 2px;
-	font-weight: bold;
-  }
-
-  .mark_bluedark {
-    background: repeating-linear-gradient(-45deg,var(--color_mark_bluedark),var(--color_mark_bluedark) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;
-	display: inline;
-    padding: 2px;
-	font-weight: bold;
-  }
-
-  .mark_orangedark {
-    background: repeating-linear-gradient(-45deg,var(--color_mark_orangedark),var(--color_mark_orangedark) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;
-	display: inline;
-    padding: 2px;
-	font-weight: bold;
-  }
-
-  .mark_reddark {
-    background: repeating-linear-gradient(-45deg,var(--color_mark_reddark),var(--color_mark_reddark) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;
-	display: inline;
-    padding: 2px;
-	font-weight: bold;
-  }
+ .mark_green {background: repeating-linear-gradient(-45deg,var(--color_mark_green),var(--color_mark_green) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_yellow {background: repeating-linear-gradient(-45deg,var(--color_mark_yellow),var(--color_mark_yellow) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_blue {background: repeating-linear-gradient(-45deg,var(--color_mark_blue),var(--color_mark_blue) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_orange {background: repeating-linear-gradient(-45deg,var(--color_mark_orange),var(--color_mark_orange) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_red {background: repeating-linear-gradient(-45deg,var(--color_mark_red),var(--color_mark_red) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_purple {background: repeating-linear-gradient(-45deg,var(--color_mark_purple),var(--color_mark_purple) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_dgreen {background: repeating-linear-gradient(-45deg,var(--color_mark_dgreen),var(--color_mark_dgreen) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_dyellow {background: repeating-linear-gradient(-45deg,var(--color_mark_dyellow),var(--color_mark_dyellow) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_dblue {background: repeating-linear-gradient(-45deg,var(--color_mark_dblue),var(--color_mark_dblue) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_dorange {background: repeating-linear-gradient(-45deg,var(--color_mark_dorange),var(--color_mark_dorange) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_dred {background: repeating-linear-gradient(-45deg,var(--color_mark_dred),var(--color_mark_dred) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mark_dpurple {background: repeating-linear-gradient(-45deg,var(--color_mark_dpurple),var(--color_mark_dpurple) 2px,transparent 2px,transparent 4px) no-repeat 0 0.95em;display: inline;padding: 2px;font-weight: bold;}.mk_red {background-color: rgba(255, 13, 13, 0.4) }.mk_orange {background-color: rgba(255, 142, 13, 0.4) }.mk_yellow {background-color: rgba(255, 239, 13, 0.4) }.mk_green {background-color: rgba(13, 255, 65, 0.4) }.mk_cyan {background-color: rgba(13, 215, 255, 0.4) }.mk_blue {background-color: rgba(13, 98, 255, 0.4) }.mk_purple {background-color: rgba(126, 13, 255, 0.4) }.mk_pink {background-color: rgba(255, 13, 203, 0.4) }.mk_lred {background-color: rgba(255, 152, 152, 0.4) }.mk_lorange {background-color: rgba(255, 190, 152, 0.4) }.mk_lyellow {background-color: rgba(255, 252, 152, 0.4) }.mk_lgreen {background-color: rgba(152, 255, 159, 0.4) }.mk_lcyan {background-color: rgba(152, 255, 253, 0.4) }.mk_lblue {background-color: rgba(152, 204, 255, 0.4) }.mk_lpurple {background-color: rgba(181, 152, 255, 0.4) }.mk_lpink {background-color: rgba(255, 152, 231, 0.4) }
 
   :root {
     --color_mark_blue: #b7e3ff;
@@ -1082,11 +1014,13 @@ img.message__img {
     --color_mark_yellow: #fcf69f;
     --color_mark_orange: #ffddbc;
     --color_mark_red: #ffadad;
-	--color_mark_bluedark: #5995ba;
-	--color_mark_greendark: #599f60;
-    --color_mark_yellowdark: #aaa226;
-	--color_mark_orangedark: #b18559;
-	--color_mark_reddark: #c25151;
+	  --color_mark_dblue: #5995ba;
+	  --color_mark_dgreen: #599f60;
+    --color_mark_dyellow: #aaa226;
+	  --color_mark_dorange: #b18559;
+	  --color_mark_dred: #c25151;
+    --color_mark_purple: #c1a1f4;
+    --color_mark_dpurple: #7c51c2;
   }
 
 
