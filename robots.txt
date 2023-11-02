@@ -44,7 +44,7 @@ Disallow: /posts/to-know-fediverse/
 
 Disallow: /posts/painful-and-happy-blog-decoration/
 
-Disallow: /posts/build-your-own-blog-with-hugo-and-github./
+Disallow: /posts/build-your-own-blog-with-hugo-and-github/
 
 Disallow: /posts/to-build-hugo/
 
