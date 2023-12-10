@@ -6,7 +6,17 @@ Disallow: /posts/
 
 Disallow: /
 
+Disallow: /posts/still-dead/
+
 Disallow: /tags/
+
+Disallow: /tags/%E5%BD%B1%E9%9F%B3%E6%B8%B8/
+
+Disallow: /categories/%E6%B7%B1%E6%B5%B7%E7%94%B5%E9%9F%B3%E5%92%92%E8%AF%AD/
+
+Disallow: /tags/%E8%BC%B8%E5%85%A5%E6%B3%95/
+
+Disallow: /tags/%E9%9A%8F%E6%83%B3/
 
 Disallow: /posts/computer-knowledge-1/
 
@@ -18,15 +28,11 @@ Disallow: /tags/hugo/
 
 Disallow: /posts/add-robotstxt/
 
-Disallow: /categories/%E6%B7%B1%E6%B5%B7%E7%94%B5%E9%9F%B3%E5%92%92%E8%AF%AD/
-
 Disallow: /posts/dental-care/
 
 Disallow: /posts/i-got-a-cat/
 
 Disallow: /tags/%E7%8C%AB/
-
-Disallow: /tags/%E9%9A%8F%E6%83%B3/
 
 Disallow: /posts/recently-watch-dramas/
 
